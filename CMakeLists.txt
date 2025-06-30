@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.20)
+project(gsbox_libs)
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -O3 -g -pthread -fPIC ")
+# set(CMAKE_CXX_STANDARD 17)
+include(cmake/opencv.cmake)
+include(cmake/ffmpeg.cmake)
+#include(cmake/yaml-cpp.cmake)
+#include(cmake/json.cmake)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/gvision)
+
+add_subdirectory(gvision)
+add_subdirectory(app)

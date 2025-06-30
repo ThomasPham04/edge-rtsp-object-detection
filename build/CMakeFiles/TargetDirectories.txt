@@ -1,0 +1,8 @@
+/workspace/libav-decoder/build/CMakeFiles/edit_cache.dir
+/workspace/libav-decoder/build/CMakeFiles/rebuild_cache.dir
+/workspace/libav-decoder/build/gvision/CMakeFiles/gvision.dir
+/workspace/libav-decoder/build/gvision/CMakeFiles/edit_cache.dir
+/workspace/libav-decoder/build/gvision/CMakeFiles/rebuild_cache.dir
+/workspace/libav-decoder/build/app/CMakeFiles/app_decode_rtsp.dir
+/workspace/libav-decoder/build/app/CMakeFiles/edit_cache.dir
+/workspace/libav-decoder/build/app/CMakeFiles/rebuild_cache.dir
