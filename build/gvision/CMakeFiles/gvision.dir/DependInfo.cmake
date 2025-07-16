@@ -8,10 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/workspace/libav-decoder/gvision/decoder/DecoderAbstract.cc" "gvision/CMakeFiles/gvision.dir/decoder/DecoderAbstract.cc.o" "gcc" "gvision/CMakeFiles/gvision.dir/decoder/DecoderAbstract.cc.o.d"
-  "/workspace/libav-decoder/gvision/decoder/LibavDecodeContext.cc" "gvision/CMakeFiles/gvision.dir/decoder/LibavDecodeContext.cc.o" "gcc" "gvision/CMakeFiles/gvision.dir/decoder/LibavDecodeContext.cc.o.d"
-  "/workspace/libav-decoder/gvision/decoder/LibavDecoder.cc" "gvision/CMakeFiles/gvision.dir/decoder/LibavDecoder.cc.o" "gcc" "gvision/CMakeFiles/gvision.dir/decoder/LibavDecoder.cc.o.d"
-  "/workspace/libav-decoder/gvision/decoder/libav_utils.cc" "gvision/CMakeFiles/gvision.dir/decoder/libav_utils.cc.o" "gcc" "gvision/CMakeFiles/gvision.dir/decoder/libav_utils.cc.o.d"
+  "/workspace/libav-decoder/gvision/decoder/hw_decoder.cc" "gvision/CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o" "gcc" "gvision/CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o.d"
+  "/workspace/libav-decoder/gvision/rtsp_reader/rtsp_reader.cc" "gvision/CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o" "gcc" "gvision/CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o.d"
   )
 
 # Targets to which this target links.

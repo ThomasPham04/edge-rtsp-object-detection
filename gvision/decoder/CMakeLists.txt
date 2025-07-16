@@ -17,6 +17,8 @@ set(SRCs
         decoder/LibavDecoder.h
         decoder/LibavDecodeContext.cc
         decoder/libav_utils.cc
+        decoder/hw_decoder.cc
+        decoder/hw_decoder.h
 
         vision/HumanProcessor.cc
         camera/HumanCamera.cc
@@ -36,5 +38,6 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
         ${OpenCV_LIBS}
         ${YAML_CPP_LIBRARIES}
         ${FFMPEG_LIBS}
+        ${CVI_MPI_LIBS}
         nlohmann_json::nlohmann_json
         )

@@ -1,12 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/gvision.dir/decoder/DecoderAbstract.cc.o"
-  "CMakeFiles/gvision.dir/decoder/DecoderAbstract.cc.o.d"
-  "CMakeFiles/gvision.dir/decoder/LibavDecodeContext.cc.o"
-  "CMakeFiles/gvision.dir/decoder/LibavDecodeContext.cc.o.d"
-  "CMakeFiles/gvision.dir/decoder/LibavDecoder.cc.o"
-  "CMakeFiles/gvision.dir/decoder/LibavDecoder.cc.o.d"
-  "CMakeFiles/gvision.dir/decoder/libav_utils.cc.o"
-  "CMakeFiles/gvision.dir/decoder/libav_utils.cc.o.d"
+  "CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o"
+  "CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o.d"
+  "CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o"
+  "CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o.d"
   "libgvision.pdb"
   "libgvision.so"
 )

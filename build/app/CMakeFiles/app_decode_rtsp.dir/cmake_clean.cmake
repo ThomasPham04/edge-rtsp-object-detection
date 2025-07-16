@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/app_decode_rtsp.dir/rtsp_stream.cc.o"
-  "CMakeFiles/app_decode_rtsp.dir/rtsp_stream.cc.o.d"
+  "CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.o"
+  "CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.o.d"
   "app_decode_rtsp"
   "app_decode_rtsp.pdb"
 )

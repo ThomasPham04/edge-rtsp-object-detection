@@ -2,9 +2,9 @@
 
 set -e
 #Xoa cache
-rm -rf CMakeCache.txt
-
-cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/riscv-toolchain.cmake
+#rm -rf CMakeCache.txt
+make clean
+#cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/riscv-toolchain.cmake
 
 make -j4
 

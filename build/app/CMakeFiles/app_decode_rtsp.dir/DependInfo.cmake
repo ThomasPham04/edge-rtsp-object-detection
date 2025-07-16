@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/workspace/libav-decoder/app/rtsp_stream.cc" "app/CMakeFiles/app_decode_rtsp.dir/rtsp_stream.cc.o" "gcc" "app/CMakeFiles/app_decode_rtsp.dir/rtsp_stream.cc.o.d"
+  "/workspace/libav-decoder/app/hw_decode.cc" "app/CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.o" "gcc" "app/CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.o.d"
   )
 
 # Targets to which this target links.

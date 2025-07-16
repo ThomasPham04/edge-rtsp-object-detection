@@ -69,7 +69,9 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "variant": "cpp",
-        "format": "cpp"
+        "format": "cpp",
+        "cfenv": "cpp",
+        "csignal": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
     

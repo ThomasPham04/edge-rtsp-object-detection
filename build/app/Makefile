@@ -130,29 +130,29 @@ app_decode_rtsp/fast:
 	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_decode_rtsp.dir/build.make app/CMakeFiles/app_decode_rtsp.dir/build
 .PHONY : app_decode_rtsp/fast
 
-rtsp_stream.o: rtsp_stream.cc.o
-.PHONY : rtsp_stream.o
+hw_decode.o: hw_decode.cc.o
+.PHONY : hw_decode.o
 
 # target to build an object file
-rtsp_stream.cc.o:
-	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_decode_rtsp.dir/build.make app/CMakeFiles/app_decode_rtsp.dir/rtsp_stream.cc.o
-.PHONY : rtsp_stream.cc.o
+hw_decode.cc.o:
+	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_decode_rtsp.dir/build.make app/CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.o
+.PHONY : hw_decode.cc.o
 
-rtsp_stream.i: rtsp_stream.cc.i
-.PHONY : rtsp_stream.i
+hw_decode.i: hw_decode.cc.i
+.PHONY : hw_decode.i
 
 # target to preprocess a source file
-rtsp_stream.cc.i:
-	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_decode_rtsp.dir/build.make app/CMakeFiles/app_decode_rtsp.dir/rtsp_stream.cc.i
-.PHONY : rtsp_stream.cc.i
+hw_decode.cc.i:
+	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_decode_rtsp.dir/build.make app/CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.i
+.PHONY : hw_decode.cc.i
 
-rtsp_stream.s: rtsp_stream.cc.s
-.PHONY : rtsp_stream.s
+hw_decode.s: hw_decode.cc.s
+.PHONY : hw_decode.s
 
 # target to generate assembly for a file
-rtsp_stream.cc.s:
-	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_decode_rtsp.dir/build.make app/CMakeFiles/app_decode_rtsp.dir/rtsp_stream.cc.s
-.PHONY : rtsp_stream.cc.s
+hw_decode.cc.s:
+	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_decode_rtsp.dir/build.make app/CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.s
+.PHONY : hw_decode.cc.s
 
 # Help Target
 help:
@@ -163,9 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... app_decode_rtsp"
-	@echo "... rtsp_stream.o"
-	@echo "... rtsp_stream.i"
-	@echo "... rtsp_stream.s"
+	@echo "... hw_decode.o"
+	@echo "... hw_decode.i"
+	@echo "... hw_decode.s"
 .PHONY : help
 
 
