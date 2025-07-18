@@ -193,6 +193,8 @@ app/CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.o: \
  /workspace/libav-decoder/cvi_mpi/include/linux/cvi_comm_vdec.h \
  /workspace/libav-decoder/cvi_mpi/include/cvi_vb.h \
  /workspace/libav-decoder/cvi_mpi/include/cvi_comm_vb.h \
+ /workspace/libav-decoder/cvi_mpi/include/cvi_sys.h \
+ /workspace/libav-decoder/cvi_mpi/include/linux/cvi_comm_sys.h \
  /workspace/opencv-mobile-4.10.0-licheerv-nano/include/opencv4/opencv2/opencv.hpp \
  /workspace/opencv-mobile-4.10.0-licheerv-nano/include/opencv4/opencv2/opencv_modules.hpp \
  /workspace/opencv-mobile-4.10.0-licheerv-nano/include/opencv4/opencv2/core.hpp \

@@ -4,7 +4,10 @@
 #include "cvi_comm_vdec.h"
 #include "cvi_vb.h"
 #include "cvi_comm_vb.h"
+#include <cvi_sys.h>
+
 #include <iostream>
+#include <string>
 class HardwareDecoder {
 public:
     bool init(int width, int height);

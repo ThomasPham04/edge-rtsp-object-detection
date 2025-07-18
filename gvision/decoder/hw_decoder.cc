@@ -1,9 +1,8 @@
 // hw_decoder.cpp
 #include "hw_decoder.h"
-#include <string.h>
-#include <cvi_sys.h>
+
 bool HardwareDecoder::init(int width, int height) {
-    CVI_VB_Init();
+    // CVI_VB_Init();
 
     CVI_S32 ret = CVI_SYS_Init();
     if (ret != CVI_SUCCESS) {

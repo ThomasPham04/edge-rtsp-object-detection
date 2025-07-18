@@ -37,6 +37,8 @@ gvision/CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o: \
  /workspace/libav-decoder/cvi_mpi/include/linux/cvi_comm_vdec.h \
  /workspace/libav-decoder/cvi_mpi/include/cvi_vb.h \
  /workspace/libav-decoder/cvi_mpi/include/cvi_comm_vb.h \
+ /workspace/libav-decoder/cvi_mpi/include/cvi_sys.h \
+ /workspace/libav-decoder/cvi_mpi/include/linux/cvi_comm_sys.h \
  /workspace/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/iostream \
  /workspace/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/riscv64-unknown-linux-musl/lib64xthead/lp64d/bits/c++config.h \
  /workspace/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/riscv64-unknown-linux-musl/lib64xthead/lp64d/bits/os_defines.h \
@@ -139,6 +141,4 @@ gvision/CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o: \
  /workspace/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/basic_ios.tcc \
  /workspace/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/ostream.tcc \
  /workspace/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/istream \
- /workspace/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/istream.tcc \
- /workspace/libav-decoder/cvi_mpi/include/cvi_sys.h \
- /workspace/libav-decoder/cvi_mpi/include/linux/cvi_comm_sys.h
+ /workspace/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/istream.tcc
