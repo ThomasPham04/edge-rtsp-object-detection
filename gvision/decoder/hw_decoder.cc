@@ -36,9 +36,6 @@ bool HardwareDecoder::init(int width, int height) {
     return true;
 }
 
-
-
-
 bool HardwareDecoder::sendPacket(uint8_t *data, uint32_t size, int64_t pts) {
     VDEC_STREAM_S stream;
     memset(&stream, 0, sizeof(stream));
