@@ -114,12 +114,12 @@ gvision/clean: gvision/CMakeFiles/gvision.dir/clean
 gvision/CMakeFiles/gvision.dir/all:
 	$(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/depend
 	$(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/libav-decoder/build/CMakeFiles --progress-num=3,4,5 "Built target gvision"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/libav-decoder/build/CMakeFiles --progress-num=3,4,5,6 "Built target gvision"
 .PHONY : gvision/CMakeFiles/gvision.dir/all
 
 # Build rule for subdir invocation for target.
 gvision/CMakeFiles/gvision.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/libav-decoder/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/libav-decoder/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gvision/CMakeFiles/gvision.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/libav-decoder/build/CMakeFiles 0
 .PHONY : gvision/CMakeFiles/gvision.dir/rule
@@ -145,7 +145,7 @@ app/CMakeFiles/app_decode_rtsp.dir/all: gvision/CMakeFiles/gvision.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/app_decode_rtsp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/libav-decoder/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/libav-decoder/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/app_decode_rtsp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/libav-decoder/build/CMakeFiles 0
 .PHONY : app/CMakeFiles/app_decode_rtsp.dir/rule

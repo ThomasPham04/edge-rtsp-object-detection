@@ -71,8 +71,14 @@
         "variant": "cpp",
         "format": "cpp",
         "cfenv": "cpp",
-        "csignal": "cpp"
+        "csignal": "cpp",
+        "ranges": "cpp",
+        "any": "cpp",
+        "bitset": "cpp",
+        "regex": "cpp",
+        "hash_map": "cpp",
+        "valarray": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "enabled"
     
 }

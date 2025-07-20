@@ -9,6 +9,8 @@ set(SRCs
         # decoder/LibavDecoder.h
         # decoder/LibavDecodeContext.cc
         # decoder/libav_utils.cc
+        AI/detection.cc
+        AI/detection.h
         decoder/hw_decoder.cc
         decoder/hw_decoder.h
         rtsp_reader/rtsp_reader.cc

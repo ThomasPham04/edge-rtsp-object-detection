@@ -32,7 +32,7 @@ int main() {
         CVI_TDL_SUPPORTED_MODEL_E model = CVI_TDL_SUPPORTED_MODEL_YOLOV8_DETECTION;
         cvtdl_object_t obj;
         if (decoder.getFrame(&frame)) {
-            sample.objDectection(modelBasePath + "yolov8n.cvimodel", frame, model, &obj);
+            sample.objDectection(modelBasePath + "yolov8n.cvimodel", &frame, model, &obj);
             std::cout   << "obj infor: " << obj.info << std::endl 
                         << "obj width: " << obj.width << std::endl
                         << "obj height" << obj.height << std::endl;

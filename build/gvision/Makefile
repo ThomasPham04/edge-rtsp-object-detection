@@ -130,6 +130,30 @@ gvision/fast:
 	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/build
 .PHONY : gvision/fast
 
+AI/detection.o: AI/detection.cc.o
+.PHONY : AI/detection.o
+
+# target to build an object file
+AI/detection.cc.o:
+	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/AI/detection.cc.o
+.PHONY : AI/detection.cc.o
+
+AI/detection.i: AI/detection.cc.i
+.PHONY : AI/detection.i
+
+# target to preprocess a source file
+AI/detection.cc.i:
+	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/AI/detection.cc.i
+.PHONY : AI/detection.cc.i
+
+AI/detection.s: AI/detection.cc.s
+.PHONY : AI/detection.s
+
+# target to generate assembly for a file
+AI/detection.cc.s:
+	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/AI/detection.cc.s
+.PHONY : AI/detection.cc.s
+
 decoder/hw_decoder.o: decoder/hw_decoder.cc.o
 .PHONY : decoder/hw_decoder.o
 
@@ -187,6 +211,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... gvision"
+	@echo "... AI/detection.o"
+	@echo "... AI/detection.i"
+	@echo "... AI/detection.s"
 	@echo "... decoder/hw_decoder.o"
 	@echo "... decoder/hw_decoder.i"
 	@echo "... decoder/hw_decoder.s"

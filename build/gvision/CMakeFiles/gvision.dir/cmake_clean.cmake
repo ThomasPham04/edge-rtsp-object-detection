@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/gvision.dir/AI/detection.cc.o"
+  "CMakeFiles/gvision.dir/AI/detection.cc.o.d"
   "CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o"
   "CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o.d"
   "CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o"
