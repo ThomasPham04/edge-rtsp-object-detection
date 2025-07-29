@@ -77,8 +77,20 @@
         "bitset": "cpp",
         "regex": "cpp",
         "hash_map": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "shared_mutex": "cpp",
+        "hash_set": "cpp",
+        "slist": "cpp",
+        "vpss_helper.h": "c",
+        "time.h": "c",
+        "cvi_tdl.h": "c",
+        "cvi_tdl_core.h": "c",
+        "cvi_tdl_rescale_bbox.h": "c",
+        "cvtdl_vpss_types.h": "c",
+        "cvtdl_errno.h": "c",
+        "cvi_tdl_utils.h": "c",
+        "cvtdl_face_types.h": "c"
     },
-    "C_Cpp.errorSquiggles": "enabled"
+    "C_Cpp.errorSquiggles": "disabled"
     
 }

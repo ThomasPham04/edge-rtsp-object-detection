@@ -70,8 +70,4 @@ void HardwareDecoder::cleanup() {
     CVI_VDEC_StopRecvStream(vdecChn);
     CVI_VDEC_DestroyChn(vdecChn);
     CVI_SYS_Exit();
-
-    if (vbpool != VB_INVALID_POOLID) {
-        CVI_VB_DestroyPool(vbpool);
-    }
 }

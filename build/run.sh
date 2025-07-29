@@ -4,6 +4,8 @@ help() {
 	echo "Option 1: retain CmakeCache"
 	echo "Option 2: remove CmakeCache"
 }
+
+cd "$(dirname "$0")" || exit 1
 a=-1
 if [ $# -ne 1 ] 
 then
@@ -31,4 +33,8 @@ then
 
 	echo "Done"
 	exit
-fi		
+elif [ $a -eq 3 ]
+then
+	cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/riscv-toolchain.cmake
+fi
+

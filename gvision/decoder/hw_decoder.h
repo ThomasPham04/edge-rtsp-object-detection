@@ -2,9 +2,7 @@
 #include "cvi_vdec.h"
 #include "cvi_comm_video.h"
 #include "cvi_comm_vdec.h"
-#include "cvi_vb.h"
-#include "cvi_comm_vb.h"
-#include <cvi_sys.h>
+#include "cvi_sys.h"
 
 #include <iostream>
 #include <string>
@@ -17,5 +15,5 @@ public:
     void cleanup();
 private:
     VDEC_CHN vdecChn = 0;
-    VB_POOL vbpool = VB_INVALID_POOLID;
+    // VB_POOL vbpool = VB_INVALID_POOLID;
 };

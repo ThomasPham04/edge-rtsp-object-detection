@@ -1,16 +1,12 @@
 cmake_minimum_required(VERSION 3.20)
-project(gsbox_libs)
-# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -O3 -g -pthread -fPIC ")
-# set(CMAKE_CXX_STANDARD 17)
-include(cmake/opencv.cmake)
+project(rtsp_decoder C CXX)
+
 include(cmake/ffmpeg.cmake)
-include(cmake/cvi_mpi.cmake)
-# include(cmake/cvi_tdl.cmake)
-#include(cmake/yaml-cpp.cmake)
-#include(cmake/json.cmake)
+include(cmake/cvi_tdl.cmake)
+
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/gvision)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/tdl_sdk/include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/cvitek-tdl-sdk/include)
 
 
 add_subdirectory(gvision) 

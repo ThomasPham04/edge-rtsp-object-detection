@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++")
+set(CMAKE_CXX_COMPILER "/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "10.2.0")
@@ -19,15 +19,15 @@ set(CMAKE_CXX_SIMULATE_ID "")
 set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "")
 set(CMAKE_CXX_SIMULATE_VERSION "")
 
-set(CMAKE_CXX_COMPILER_SYSROOT "/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/bin/../sysroot/usr")
-set(CMAKE_COMPILER_SYSROOT "/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/bin/../sysroot/usr")
+set(CMAKE_CXX_COMPILER_SYSROOT "/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/../sysroot/usr")
+set(CMAKE_COMPILER_SYSROOT "/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/../sysroot/usr")
 
 
-set(CMAKE_AR "/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-ar")
-set(CMAKE_CXX_COMPILER_AR "/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc-ar")
-set(CMAKE_RANLIB "/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-ranlib")
-set(CMAKE_CXX_COMPILER_RANLIB "/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc-ranlib")
-set(CMAKE_LINKER "/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-ld")
+set(CMAKE_AR "/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-ar")
+set(CMAKE_CXX_COMPILER_AR "/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc-ar")
+set(CMAKE_RANLIB "/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-ranlib")
+set(CMAKE_CXX_COMPILER_RANLIB "/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc-ranlib")
+set(CMAKE_LINKER "/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-ld")
 set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCXX 1)
 set(CMAKE_CXX_COMPILER_LOADED 1)
@@ -78,7 +78,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0;/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/riscv64-unknown-linux-musl/lib64xthead/lp64d;/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/backward;/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include;/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/lib/gcc/riscv64-unknown-linux-musl/10.2.0/include;/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0;/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/riscv64-unknown-linux-musl/lib64xthead/lp64d;/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/backward;/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include;/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/lib/gcc/riscv64-unknown-linux-musl/10.2.0/include;/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "atomic;stdc++;m;gcc_s;gcc;c;gcc_s;gcc")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/lib/gcc/riscv64-unknown-linux-musl/10.2.0/lib64xthead/lp64d;/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/lib64xthead/lp64d;/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/lib64xthead/lp64d;/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/lib/gcc/riscv64-unknown-linux-musl/10.2.0;/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/lib/gcc;/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/lib;/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/lib64xthead/lp64d;/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/lib64/lp64d;/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/lib64/lp64d;/workspace/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/lib")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/lib/gcc/riscv64-unknown-linux-musl/10.2.0/lib64xthead/lp64d;/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/lib64xthead/lp64d;/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/lib64xthead/lp64d;/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/lib/gcc/riscv64-unknown-linux-musl/10.2.0;/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/lib/gcc;/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/lib;/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/lib64xthead/lp64d;/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/lib64/lp64d;/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/lib64/lp64d;/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

@@ -1,6 +1,6 @@
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags:  
 
 The output was:
@@ -8,8 +8,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: -c 
 
 The output was:
@@ -17,8 +17,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: -Aa 
 
 The output was:
@@ -26,8 +26,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: -D__CLASSIC_C__ 
 
 The output was:
@@ -35,8 +35,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
 
 The output was:
@@ -44,8 +44,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: -c;-I__does_not_exist__ 
 
 The output was:
@@ -53,7 +53,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags:  
 
@@ -62,7 +62,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: -c 
 
@@ -71,7 +71,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: -Aa 
 
@@ -80,7 +80,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: -D__CLASSIC_C__ 
 
@@ -89,7 +89,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
 
@@ -98,7 +98,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: -c;-I__does_not_exist__ 
 
@@ -109,8 +109,8 @@ No such file or directory
 Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
 Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags:  
 
 The output was:
@@ -118,8 +118,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: -c 
 
 The output was:
@@ -127,8 +127,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: --c++ 
 
 The output was:
@@ -136,8 +136,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: --ec++ 
 
 The output was:
@@ -145,8 +145,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
 
 The output was:
@@ -154,8 +154,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: -c;-I__does_not_exist__ 
 
 The output was:
@@ -163,7 +163,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags:  
 
@@ -172,7 +172,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: -c 
 
@@ -181,7 +181,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: --c++ 
 
@@ -190,7 +190,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: --ec++ 
 
@@ -199,7 +199,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
 
@@ -208,7 +208,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: -c;-I__does_not_exist__ 
 
@@ -219,8 +219,8 @@ No such file or directory
 Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
 Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags:  
 
 The output was:
@@ -228,8 +228,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: -c 
 
 The output was:
@@ -237,8 +237,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: -Aa 
 
 The output was:
@@ -246,8 +246,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: -D__CLASSIC_C__ 
 
 The output was:
@@ -255,8 +255,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
 
 The output was:
@@ -264,8 +264,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: -c;-I__does_not_exist__ 
 
 The output was:
@@ -273,7 +273,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags:  
 
@@ -282,7 +282,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: -c 
 
@@ -291,7 +291,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: -Aa 
 
@@ -300,7 +300,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: -D__CLASSIC_C__ 
 
@@ -309,7 +309,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
 
@@ -318,7 +318,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: -c;-I__does_not_exist__ 
 
@@ -329,8 +329,8 @@ No such file or directory
 Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
 Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags:  
 
 The output was:
@@ -338,8 +338,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: -c 
 
 The output was:
@@ -347,8 +347,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: --c++ 
 
 The output was:
@@ -356,8 +356,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: --ec++ 
 
 The output was:
@@ -365,8 +365,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
 
 The output was:
@@ -374,8 +374,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: -c;-I__does_not_exist__ 
 
 The output was:
@@ -383,7 +383,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags:  
 
@@ -392,7 +392,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: -c 
 
@@ -401,7 +401,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: --c++ 
 
@@ -410,7 +410,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: --ec++ 
 
@@ -419,7 +419,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
 
@@ -428,7 +428,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: -c;-I__does_not_exist__ 
 
@@ -439,8 +439,8 @@ No such file or directory
 Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
 Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags:  
 
 The output was:
@@ -448,8 +448,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: -c 
 
 The output was:
@@ -457,8 +457,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: -Aa 
 
 The output was:
@@ -466,8 +466,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: -D__CLASSIC_C__ 
 
 The output was:
@@ -475,8 +475,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
 
 The output was:
@@ -484,8 +484,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: -c;-I__does_not_exist__ 
 
 The output was:
@@ -493,7 +493,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags:  
 
@@ -502,7 +502,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: -c 
 
@@ -511,7 +511,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: -Aa 
 
@@ -520,7 +520,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: -D__CLASSIC_C__ 
 
@@ -529,7 +529,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
 
@@ -538,7 +538,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: -c;-I__does_not_exist__ 
 
@@ -549,8 +549,8 @@ No such file or directory
 Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
 Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags:  
 
 The output was:
@@ -558,8 +558,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: -c 
 
 The output was:
@@ -567,8 +567,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: --c++ 
 
 The output was:
@@ -576,8 +576,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: --ec++ 
 
 The output was:
@@ -585,8 +585,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
 
 The output was:
@@ -594,8 +594,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: -c;-I__does_not_exist__ 
 
 The output was:
@@ -603,7 +603,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags:  
 
@@ -612,7 +612,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: -c 
 
@@ -621,7 +621,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: --c++ 
 
@@ -630,7 +630,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: --ec++ 
 
@@ -639,7 +639,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
 
@@ -648,7 +648,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: -c;-I__does_not_exist__ 
 
@@ -659,8 +659,8 @@ No such file or directory
 Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
 Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags:  
 
 The output was:
@@ -668,8 +668,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: -c 
 
 The output was:
@@ -677,8 +677,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: -Aa 
 
 The output was:
@@ -686,8 +686,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: -D__CLASSIC_C__ 
 
 The output was:
@@ -695,8 +695,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
 
 The output was:
@@ -704,8 +704,8 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
-Build flags: ;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread;-std=gnu11;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-ffunction-sections;-fdata-sections;-Wno-pointer-to-int-cast;-fsigned-char;-Wl,-gc-sections;-lstdc++;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
 Id flags: -c;-I__does_not_exist__ 
 
 The output was:
@@ -713,7 +713,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags:  
 
@@ -722,7 +722,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: -c 
 
@@ -731,7 +731,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: -Aa 
 
@@ -740,7 +740,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: -D__CLASSIC_C__ 
 
@@ -749,7 +749,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
 
@@ -758,7 +758,7 @@ No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-gcc 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
 Build flags: 
 Id flags: -c;-I__does_not_exist__ 
 
@@ -769,8 +769,8 @@ No such file or directory
 Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
 Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags:  
 
 The output was:
@@ -778,8 +778,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: -c 
 
 The output was:
@@ -787,8 +787,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: --c++ 
 
 The output was:
@@ -796,8 +796,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: --ec++ 
 
 The output was:
@@ -805,8 +805,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
 
 The output was:
@@ -814,8 +814,8 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
-Build flags: ;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread;-mcpu=c906fdv;-march=rv64imafdcv0p7xthead;-mabi=lp64d;-fsigned-char;-ffunction-sections;-fdata-sections;-fPIC;-Wl,-gc-sections;-lm;-lpthread
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
 Id flags: -c;-I__does_not_exist__ 
 
 The output was:
@@ -823,7 +823,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags:  
 
@@ -832,7 +832,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: -c 
 
@@ -841,7 +841,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: --c++ 
 
@@ -850,7 +850,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: --ec++ 
 
@@ -859,7 +859,7 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
 
@@ -868,7 +868,447 @@ No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: /bin/riscv64-unknown-linux-musl-g++ 
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+No such file or directory
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+No such file or directory
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+No such file or directory
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: 
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+No such file or directory
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /home/devuser/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ 
 Build flags: 
 Id flags: -c;-I__does_not_exist__ 
 

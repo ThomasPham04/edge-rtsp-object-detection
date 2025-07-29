@@ -1,1 +1,0 @@
-yolo导出脚本，使用方法参考《YOLODevelopmentGuide_zh》

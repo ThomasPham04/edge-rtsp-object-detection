@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/libav-decoder
+CMAKE_SOURCE_DIR = /home/thuyen/libav-decoder
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/libav-decoder/build
+CMAKE_BINARY_DIR = /home/thuyen/libav-decoder/build
 
 # Include any dependencies generated for this target.
 include app/CMakeFiles/app_decode_rtsp.dir/depend.make
@@ -69,51 +69,43 @@ include app/CMakeFiles/app_decode_rtsp.dir/progress.make
 # Include the compile flags for this target's objects.
 include app/CMakeFiles/app_decode_rtsp.dir/flags.make
 
-app/CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.o: app/CMakeFiles/app_decode_rtsp.dir/flags.make
-app/CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.o: ../app/hw_decode.cc
-app/CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.o: app/CMakeFiles/app_decode_rtsp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object app/CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.o"
-	cd /workspace/libav-decoder/build/app && /workspace/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.o -MF CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.o.d -o CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.o -c /workspace/libav-decoder/app/hw_decode.cc
+app/CMakeFiles/app_decode_rtsp.dir/main.cc.o: app/CMakeFiles/app_decode_rtsp.dir/flags.make
+app/CMakeFiles/app_decode_rtsp.dir/main.cc.o: ../app/main.cc
+app/CMakeFiles/app_decode_rtsp.dir/main.cc.o: app/CMakeFiles/app_decode_rtsp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object app/CMakeFiles/app_decode_rtsp.dir/main.cc.o"
+	cd /home/thuyen/libav-decoder/build/app && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/CMakeFiles/app_decode_rtsp.dir/main.cc.o -MF CMakeFiles/app_decode_rtsp.dir/main.cc.o.d -o CMakeFiles/app_decode_rtsp.dir/main.cc.o -c /home/thuyen/libav-decoder/app/main.cc
 
-app/CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.i"
-	cd /workspace/libav-decoder/build/app && /workspace/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/libav-decoder/app/hw_decode.cc > CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.i
+app/CMakeFiles/app_decode_rtsp.dir/main.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app_decode_rtsp.dir/main.cc.i"
+	cd /home/thuyen/libav-decoder/build/app && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thuyen/libav-decoder/app/main.cc > CMakeFiles/app_decode_rtsp.dir/main.cc.i
 
-app/CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.s"
-	cd /workspace/libav-decoder/build/app && /workspace/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/libav-decoder/app/hw_decode.cc -o CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.s
+app/CMakeFiles/app_decode_rtsp.dir/main.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app_decode_rtsp.dir/main.cc.s"
+	cd /home/thuyen/libav-decoder/build/app && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thuyen/libav-decoder/app/main.cc -o CMakeFiles/app_decode_rtsp.dir/main.cc.s
 
 # Object files for target app_decode_rtsp
 app_decode_rtsp_OBJECTS = \
-"CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.o"
+"CMakeFiles/app_decode_rtsp.dir/main.cc.o"
 
 # External object files for target app_decode_rtsp
 app_decode_rtsp_EXTERNAL_OBJECTS =
 
-app/app_decode_rtsp: app/CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.o
+app/app_decode_rtsp: app/CMakeFiles/app_decode_rtsp.dir/main.cc.o
 app/app_decode_rtsp: app/CMakeFiles/app_decode_rtsp.dir/build.make
 app/app_decode_rtsp: gvision/libgvision.so
-app/app_decode_rtsp: /workspace/opencv-mobile-4.10.0-licheerv-nano/lib/libopencv_core.a
-app/app_decode_rtsp: /workspace/opencv-mobile-4.10.0-licheerv-nano/lib/libopencv_features2d.a
-app/app_decode_rtsp: /workspace/opencv-mobile-4.10.0-licheerv-nano/lib/libopencv_highgui.a
-app/app_decode_rtsp: /workspace/opencv-mobile-4.10.0-licheerv-nano/lib/libopencv_imgproc.a
-app/app_decode_rtsp: /workspace/opencv-mobile-4.10.0-licheerv-nano/lib/libopencv_photo.a
-app/app_decode_rtsp: /workspace/opencv-mobile-4.10.0-licheerv-nano/lib/libopencv_video.a
-app/app_decode_rtsp: /workspace/opencv-mobile-4.10.0-licheerv-nano/lib/libopencv_imgproc.a
-app/app_decode_rtsp: /workspace/opencv-mobile-4.10.0-licheerv-nano/lib/libopencv_core.a
 app/app_decode_rtsp: app/CMakeFiles/app_decode_rtsp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable app_decode_rtsp"
-	cd /workspace/libav-decoder/build/app && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app_decode_rtsp.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable app_decode_rtsp"
+	cd /home/thuyen/libav-decoder/build/app && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app_decode_rtsp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 app/CMakeFiles/app_decode_rtsp.dir/build: app/app_decode_rtsp
 .PHONY : app/CMakeFiles/app_decode_rtsp.dir/build
 
 app/CMakeFiles/app_decode_rtsp.dir/clean:
-	cd /workspace/libav-decoder/build/app && $(CMAKE_COMMAND) -P CMakeFiles/app_decode_rtsp.dir/cmake_clean.cmake
+	cd /home/thuyen/libav-decoder/build/app && $(CMAKE_COMMAND) -P CMakeFiles/app_decode_rtsp.dir/cmake_clean.cmake
 .PHONY : app/CMakeFiles/app_decode_rtsp.dir/clean
 
 app/CMakeFiles/app_decode_rtsp.dir/depend:
-	cd /workspace/libav-decoder/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/libav-decoder /workspace/libav-decoder/app /workspace/libav-decoder/build /workspace/libav-decoder/build/app /workspace/libav-decoder/build/app/CMakeFiles/app_decode_rtsp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/thuyen/libav-decoder/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thuyen/libav-decoder /home/thuyen/libav-decoder/app /home/thuyen/libav-decoder/build /home/thuyen/libav-decoder/build/app /home/thuyen/libav-decoder/build/app/CMakeFiles/app_decode_rtsp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : app/CMakeFiles/app_decode_rtsp.dir/depend
 

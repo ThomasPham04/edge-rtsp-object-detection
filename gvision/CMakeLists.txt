@@ -2,13 +2,6 @@ set(PROJECT_NAME gvision)
 
 set(SRCs
 
-
-        # decoder/DecoderAbstract.cc
-        # decoder/DecoderAbstract.h
-        # decoder/LibavDecoder.cc
-        # decoder/LibavDecoder.h
-        # decoder/LibavDecodeContext.cc
-        # decoder/libav_utils.cc
         AI/detection.cc
         AI/detection.h
         decoder/hw_decoder.cc
@@ -19,12 +12,10 @@ set(SRCs
 
 )
 
-
 add_library(${PROJECT_NAME} SHARED ${SRCs})
+
 target_link_libraries(${PROJECT_NAME} PRIVATE
         ${OpenCV_LIBS}
-        ${CVI_MPI_LIBS}
         ${FFMPEG_LIBS}
-        sbc
-        # cvi_dnvqe
+        ${CVI_TDL_LIBS}
         )

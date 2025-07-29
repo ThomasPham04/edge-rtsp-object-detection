@@ -1,6 +1,0 @@
-SET(FFMPEGLIBS
-        ${AVCODEC_LIBRARY}
-        ${AVFORMAT_LIBRARY}
-        ${AVUTIL_LIBRARY}
-        ${SWSCALE_LIBRARY}
-        )

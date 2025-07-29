@@ -4,7 +4,12 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/local/include/opencv4"
+                "/usr/local/include/opencv4",
+                "/home/thuyen/LicheeRV-Nano-Build/middleware/v2/include",
+                "/home/thuyen/LicheeRV-Nano-Build/cvitek_tdl_sdk/sample/3rd/ive/include",
+                "/home/thuyen/LicheeRV-Nano-Build/cvitek_tdl_sdk/sample/3rd/tpu/include",
+                "/home/thuyen/LicheeRV-Nano-Build/cvitek_tdl_sdk/include"
+                
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

@@ -1,4 +1,0 @@
-[submodule "component/isp"]
-	path = component/isp
-	url = git@github.com:hmmm3012/SensorSupportList.git
-	branch = sg200x-dev

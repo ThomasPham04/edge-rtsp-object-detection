@@ -1,23 +1,25 @@
 #pragma once
-// extern "C" {
-//     #include "cvi_tdl.h"
-//     // #include "cvi_comm.h"
-// }
-#include "cvi_tdl.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <functional>
 #include <iostream>
+#include <map>
+#include <sstream>
 #include <string>
+#include <vector>
+#include "core/cvi_tdl_types_mem_internal.h"
+#include "core/utils/vpss_helper.h"
+#include "cvi_tdl.h"
+#include "cvi_tdl_media.h"
 
 class AIDetection{
     private:
     cvitdl_handle_t handle;
 
     public:
-    AIDetection(){
-        CVI_S32 ret = CVI_TDL_CreateHandle(&handle);
-        if (ret != CVI_SUCCESS){
-            std::cerr << "Can't create handle";
-        }
-    }
+    AIDetection();
+    AIDetection(int srcWidth, int srcHeight);
     ~AIDetection(){
         CVI_TDL_DestroyHandle(handle); 
     }
@@ -30,7 +32,7 @@ class AIDetection{
                         CVI_TDL_SUPPORTED_MODEL_E model_id,
                         cvtdl_face_t *face_meta);
                         
-    bool objDectection ( const std::string& url,
+    void objDectection ( const std::string& url,
                         VIDEO_FRAME_INFO_S *frame,
                         CVI_TDL_SUPPORTED_MODEL_E model_id,
                         cvtdl_object_t *obj);

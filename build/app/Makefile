@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/libav-decoder
+CMAKE_SOURCE_DIR = /home/thuyen/libav-decoder
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/libav-decoder/build
+CMAKE_BINARY_DIR = /home/thuyen/libav-decoder/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /workspace/libav-decoder/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/libav-decoder/build/CMakeFiles /workspace/libav-decoder/build/app//CMakeFiles/progress.marks
-	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/libav-decoder/build/CMakeFiles 0
+	cd /home/thuyen/libav-decoder/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/thuyen/libav-decoder/build/CMakeFiles /home/thuyen/libav-decoder/build/app//CMakeFiles/progress.marks
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thuyen/libav-decoder/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/clean
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/preinstall
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/preinstall
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /workspace/libav-decoder/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/thuyen/libav-decoder/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 app/CMakeFiles/app_decode_rtsp.dir/rule:
-	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/app_decode_rtsp.dir/rule
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/app_decode_rtsp.dir/rule
 .PHONY : app/CMakeFiles/app_decode_rtsp.dir/rule
 
 # Convenience name for target.
@@ -127,32 +127,32 @@ app_decode_rtsp: app/CMakeFiles/app_decode_rtsp.dir/rule
 
 # fast build rule for target.
 app_decode_rtsp/fast:
-	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_decode_rtsp.dir/build.make app/CMakeFiles/app_decode_rtsp.dir/build
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_decode_rtsp.dir/build.make app/CMakeFiles/app_decode_rtsp.dir/build
 .PHONY : app_decode_rtsp/fast
 
-hw_decode.o: hw_decode.cc.o
-.PHONY : hw_decode.o
+main.o: main.cc.o
+.PHONY : main.o
 
 # target to build an object file
-hw_decode.cc.o:
-	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_decode_rtsp.dir/build.make app/CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.o
-.PHONY : hw_decode.cc.o
+main.cc.o:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_decode_rtsp.dir/build.make app/CMakeFiles/app_decode_rtsp.dir/main.cc.o
+.PHONY : main.cc.o
 
-hw_decode.i: hw_decode.cc.i
-.PHONY : hw_decode.i
+main.i: main.cc.i
+.PHONY : main.i
 
 # target to preprocess a source file
-hw_decode.cc.i:
-	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_decode_rtsp.dir/build.make app/CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.i
-.PHONY : hw_decode.cc.i
+main.cc.i:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_decode_rtsp.dir/build.make app/CMakeFiles/app_decode_rtsp.dir/main.cc.i
+.PHONY : main.cc.i
 
-hw_decode.s: hw_decode.cc.s
-.PHONY : hw_decode.s
+main.s: main.cc.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-hw_decode.cc.s:
-	cd /workspace/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_decode_rtsp.dir/build.make app/CMakeFiles/app_decode_rtsp.dir/hw_decode.cc.s
-.PHONY : hw_decode.cc.s
+main.cc.s:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_decode_rtsp.dir/build.make app/CMakeFiles/app_decode_rtsp.dir/main.cc.s
+.PHONY : main.cc.s
 
 # Help Target
 help:
@@ -163,9 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... app_decode_rtsp"
-	@echo "... hw_decode.o"
-	@echo "... hw_decode.i"
-	@echo "... hw_decode.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /workspace/libav-decoder/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/thuyen/libav-decoder/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

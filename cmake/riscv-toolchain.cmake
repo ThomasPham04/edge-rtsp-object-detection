@@ -2,7 +2,7 @@
 set(CMAKE_SYSTEM_NAME Linux)
 set(CMAKE_SYSTEM_PROCESSOR riscv64)
 
-set(TOOLCHAIN_DIR /workspace/host-tools/gcc/riscv64-linux-musl-x86_64)
+set(TOOLCHAIN_DIR /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64)
 
 set(CMAKE_C_COMPILER ${TOOLCHAIN_DIR}/bin/riscv64-unknown-linux-musl-gcc)
 set(CMAKE_CXX_COMPILER ${TOOLCHAIN_DIR}/bin/riscv64-unknown-linux-musl-g++)
