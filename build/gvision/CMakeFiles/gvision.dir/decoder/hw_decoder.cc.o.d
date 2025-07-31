@@ -36,6 +36,8 @@ gvision/CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o: \
  /home/thuyen/middleware/v2/include/linux/cvi_comm_vdec.h \
  /home/thuyen/middleware/v2/include/cvi_sys.h \
  /home/thuyen/middleware/v2/include/linux/cvi_comm_sys.h \
+ /home/thuyen/middleware/v2/include/cvi_vb.h \
+ /home/thuyen/middleware/v2/include/cvi_comm_vb.h \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/iostream \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/riscv64-unknown-linux-musl/lib64xthead/lp64d/bits/c++config.h \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/riscv64-unknown-linux-musl/lib64xthead/lp64d/bits/os_defines.h \
@@ -138,4 +140,17 @@ gvision/CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o: \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/basic_ios.tcc \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/ostream.tcc \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/istream \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/istream.tcc
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/istream.tcc \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/unordered_map \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ext/aligned_buffer.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/hashtable.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/hashtable_policy.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/tuple \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/utility \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_relops.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/array \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/uses_allocator.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/invoke.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/limits \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/unordered_map.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/erase_if.h

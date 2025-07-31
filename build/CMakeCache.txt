@@ -207,13 +207,13 @@ CMAKE_TOOLCHAIN_FILE:FILEPATH=/home/thuyen/libav-decoder/cmake/riscv-toolchain.c
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-app_decode_BINARY_DIR:STATIC=/home/thuyen/libav-decoder/build/app
+app_AI_decode_BINARY_DIR:STATIC=/home/thuyen/libav-decoder/build/app
 
 //Value Computed by CMake
-app_decode_IS_TOP_LEVEL:STATIC=OFF
+app_AI_decode_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-app_decode_SOURCE_DIR:STATIC=/home/thuyen/libav-decoder/app
+app_AI_decode_SOURCE_DIR:STATIC=/home/thuyen/libav-decoder/app
 
 //Value Computed by CMake
 rtsp_decoder_BINARY_DIR:STATIC=/home/thuyen/libav-decoder/build

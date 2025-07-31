@@ -21,7 +21,23 @@ bool RtspReader::open(const std::string& url) {
             break;
         }
     }
+    AVCodecParameters *codecPar = fmtCtx->streams[videoStreamIndex]->codecpar;
+
+    switch (codecPar->codec_id) {
+        case AV_CODEC_ID_H264:
+            this->codecType = "H.264";
+            break;
+        case AV_CODEC_ID_HEVC:
+            this->codecType = "H.265";
+            break;
+        default:
+            std::cout << "Not supported type of codec\n";
+            break;
+    }
+    this->width = codecPar->width;
+    this->height = codecPar->height;
     av_dict_free(&opts);
+
     return videoStreamIndex >= 0;
 }
 
@@ -33,7 +49,7 @@ bool RtspReader::readPacket(AVPacket &pkt) {
     }
     
     if (pkt.stream_index == videoStreamIndex){
-        std::cout << "Got video packet, size" << pkt.size << "\n";
+        std::cout << "\nGot video packet\n";
         return true;
     }
     av_packet_unref(&pkt);
@@ -41,9 +57,10 @@ bool RtspReader::readPacket(AVPacket &pkt) {
 }
 
 void RtspReader::close() {
-    std::cout << "close\n" << std::flush;
+    std::cout << "close\n";
     if (fmtCtx) avformat_close_input(&fmtCtx);
     avformat_network_deinit();
 }
+
 
 

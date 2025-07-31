@@ -2,6 +2,12 @@
 
 cd app/
 
-scp app_decode_rtsp root@$LIRV_IP1:/root/
+scp app_AI_decode root@$LIRV_IP1:/root/
 
 cd ..
+
+#cd gvision/
+
+#scp libgvision.so root@$LIRV_IP1:/root/
+
+#cd ..

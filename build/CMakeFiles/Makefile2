@@ -81,7 +81,7 @@ clean: app/clean
 # Directory level rules for directory app
 
 # Recursive "all" directory target.
-app/all: app/CMakeFiles/app_decode_rtsp.dir/all
+app/all: app/CMakeFiles/app_AI_decode.dir/all
 .PHONY : app/all
 
 # Recursive "preinstall" directory target.
@@ -89,7 +89,7 @@ app/preinstall:
 .PHONY : app/preinstall
 
 # Recursive "clean" directory target.
-app/clean: app/CMakeFiles/app_decode_rtsp.dir/clean
+app/clean: app/CMakeFiles/app_AI_decode.dir/clean
 .PHONY : app/clean
 
 #=============================================================================
@@ -114,7 +114,7 @@ gvision/clean: gvision/CMakeFiles/gvision.dir/clean
 gvision/CMakeFiles/gvision.dir/all:
 	$(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/depend
 	$(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=3,4,5,6 "Built target gvision"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=6,7,8,9 "Built target gvision"
 .PHONY : gvision/CMakeFiles/gvision.dir/all
 
 # Build rule for subdir invocation for target.
@@ -134,30 +134,30 @@ gvision/CMakeFiles/gvision.dir/clean:
 .PHONY : gvision/CMakeFiles/gvision.dir/clean
 
 #=============================================================================
-# Target rules for target app/CMakeFiles/app_decode_rtsp.dir
+# Target rules for target app/CMakeFiles/app_AI_decode.dir
 
 # All Build rule for target.
-app/CMakeFiles/app_decode_rtsp.dir/all: gvision/CMakeFiles/gvision.dir/all
-	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_decode_rtsp.dir/build.make app/CMakeFiles/app_decode_rtsp.dir/depend
-	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_decode_rtsp.dir/build.make app/CMakeFiles/app_decode_rtsp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=1,2 "Built target app_decode_rtsp"
-.PHONY : app/CMakeFiles/app_decode_rtsp.dir/all
+app/CMakeFiles/app_AI_decode.dir/all: gvision/CMakeFiles/gvision.dir/all
+	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/depend
+	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target app_AI_decode"
+.PHONY : app/CMakeFiles/app_AI_decode.dir/all
 
 # Build rule for subdir invocation for target.
-app/CMakeFiles/app_decode_rtsp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thuyen/libav-decoder/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/app_decode_rtsp.dir/all
+app/CMakeFiles/app_AI_decode.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thuyen/libav-decoder/build/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/app_AI_decode.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thuyen/libav-decoder/build/CMakeFiles 0
-.PHONY : app/CMakeFiles/app_decode_rtsp.dir/rule
+.PHONY : app/CMakeFiles/app_AI_decode.dir/rule
 
 # Convenience name for target.
-app_decode_rtsp: app/CMakeFiles/app_decode_rtsp.dir/rule
-.PHONY : app_decode_rtsp
+app_AI_decode: app/CMakeFiles/app_AI_decode.dir/rule
+.PHONY : app_AI_decode
 
 # clean rule for target.
-app/CMakeFiles/app_decode_rtsp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_decode_rtsp.dir/build.make app/CMakeFiles/app_decode_rtsp.dir/clean
-.PHONY : app/CMakeFiles/app_decode_rtsp.dir/clean
+app/CMakeFiles/app_AI_decode.dir/clean:
+	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/clean
+.PHONY : app/CMakeFiles/app_AI_decode.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -130,17 +130,17 @@ gvision/fast:
 .PHONY : gvision/fast
 
 #=============================================================================
-# Target rules for targets named app_decode_rtsp
+# Target rules for targets named app_AI_decode
 
 # Build rule for target.
-app_decode_rtsp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app_decode_rtsp
-.PHONY : app_decode_rtsp
+app_AI_decode: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app_AI_decode
+.PHONY : app_AI_decode
 
 # fast build rule for target.
-app_decode_rtsp/fast:
-	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_decode_rtsp.dir/build.make app/CMakeFiles/app_decode_rtsp.dir/build
-.PHONY : app_decode_rtsp/fast
+app_AI_decode/fast:
+	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/build
+.PHONY : app_AI_decode/fast
 
 # Help Target
 help:
@@ -150,7 +150,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... app_decode_rtsp"
+	@echo "... app_AI_decode"
 	@echo "... gvision"
 .PHONY : help
 

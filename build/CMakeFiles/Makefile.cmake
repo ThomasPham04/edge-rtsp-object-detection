@@ -126,5 +126,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "gvision/CMakeFiles/gvision.dir/DependInfo.cmake"
-  "app/CMakeFiles/app_decode_rtsp.dir/DependInfo.cmake"
+  "app/CMakeFiles/app_AI_decode.dir/DependInfo.cmake"
   )
