@@ -57,7 +57,6 @@ bool RtspReader::readPacket(AVPacket &pkt) {
 }
 
 void RtspReader::close() {
-    std::cout << "close\n";
     if (fmtCtx) avformat_close_input(&fmtCtx);
     avformat_network_deinit();
 }

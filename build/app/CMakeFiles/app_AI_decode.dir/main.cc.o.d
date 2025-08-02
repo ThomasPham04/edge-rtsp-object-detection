@@ -257,5 +257,11 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: \
  /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/service/cvi_tdl_service.h \
  /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/service/cvi_tdl_service_types.h \
  /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/cvi_tdl_media.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/csignal \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/signal.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/bits/signal.h \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/unistd.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/bits/posix.h
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/bits/posix.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/atomic \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/atomic_base.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/atomic_lockfree_defines.h

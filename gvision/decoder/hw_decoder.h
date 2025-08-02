@@ -15,6 +15,7 @@ public:
         CVI_VDEC_DestroyChn(vdecChn);
         CVI_VB_DestroyPool(0);
         CVI_SYS_Exit();
+        CVI_VB_Exit();
     }
     HardwareDecoder(int width, int height, std::string codecType);
     bool sendPacket(uint8_t *data, uint32_t size, int64_t pts);
