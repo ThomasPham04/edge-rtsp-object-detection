@@ -94,7 +94,8 @@
         "pthread.h": "c",
         "cvi_comm.h": "c",
         "sample_comm.h": "c",
-        "defs.h": "c"
+        "defs.h": "c",
+        "source_location": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
     

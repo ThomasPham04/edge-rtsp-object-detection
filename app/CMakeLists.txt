@@ -7,4 +7,5 @@ target_link_libraries(${PROJECT_NAME}
         bytetrack
         ${FFMPEG_LIBS}
         ${CVI_TDL_LIBS}
+        ${BYTETRACK_LIB}
         )

@@ -5,6 +5,7 @@
 #include <csignal>
 #include <unistd.h>
 #include <atomic>
+#include <vector>
 #include "BYTETracker.h"
 // #include <opencv2/opencv.hpp>
 //      rtsp://admin:gsv@101Aa@192.168.50.4:554/Streaming/channels/101
@@ -20,6 +21,14 @@ void int_handler(int signal){
     stop = true;
 }
 int main(int argc, char* argv[]) {
+    
+    byte_track::BYTETracker tracker(
+        30,     // frame_rate
+        30,     // track_buffer
+        0.5,    // track_thresh
+        0.6,    // high_thresh
+        0.8     // match_thresh
+    );
     RtspReader reader;
     signal(SIGINT, int_handler);
     std::cout << "-------------------Hardware Decoder-------------------\n";
@@ -55,20 +64,37 @@ int main(int argc, char* argv[]) {
         }
         if (decoder.getFrame(&frame)) {
             detector.objDectection(argv[1], &frame, model, &obj, 0.5);
-            std::cout << "objnum:" << obj.size << std::endl;
-            std::stringstream ss;
-            ss << "boxes=[";
+
+            std::vector<byte_track::Object> detected_objects;
             for (uint32_t i = 0; i < obj.size; i++) {
-                ss << "[" << obj.info[i].bbox.x1 << "," << obj.info[i].bbox.y1 << ","
-                << obj.info[i].bbox.x2 << "," << obj.info[i].bbox.y2 << ","
-                << obj.info[i].classes << "," << obj.info[i].bbox.score << "],";
+                if (obj.info[i].classes == 0) {  // Only person
+                    byte_track::Rect<float> rect(
+                        obj.info[i].bbox.x1,
+                        obj.info[i].bbox.y1,
+                        obj.info[i].bbox.x2,
+                        obj.info[i].bbox.y2
+                    );
+                    byte_track::Object person(rect, 0, obj.info[i].bbox.score);
+                    detected_objects.push_back(person);
+                }
             }
-            ss << "]\n";
-            std::cout << ss.str();
+
+            auto tracks = tracker.update(detected_objects);
+            std::cout << "Tracked People:\n";
+            for (const auto& track : tracks) {
+                const auto& rect = track->getRect();  // rect is of type Rect<float>
+                std::cout << "ID: " << track->getTrackId()
+                        << " Box: x=" << rect.x()
+                        << ", y=" << rect.y()
+                        << ", width=" << rect.width()
+                        << ", height=" << rect.height() << "\n";
+            }
+
+
+
             decoder.releaseFrame(&frame);
-        } else {
-            std::cout << "Can't get any frame" << std::endl;
         }
+
         count++;
         CVI_TDL_Free(&obj);
         av_packet_unref(&pkt);

@@ -8,7 +8,7 @@ include(cmake/bytetrack.cmake)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/gvision)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/cvitek-tdl-sdk/include)
-
+include_directories(/usr/include/eigen3)
 
 add_subdirectory(gvision) 
 add_subdirectory(app)

@@ -1,0 +1,4 @@
+cleả
+clear
+ls
+exit

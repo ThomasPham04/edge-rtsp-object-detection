@@ -11,7 +11,8 @@
                 "/home/thuyen/LicheeRV-Nano-Build/cvitek_tdl_sdk/sample/3rd/tpu/include",
                 "/home/thuyen/LicheeRV-Nano-Build/cvitek_tdl_sdk/sample/3rd/rtsp/include",
                 "/home/thuyen/LicheeRV-Nano-Build/cvitek_tdl_sdk/include",
-                "/home/thuyen/LicheeRV-Nano-Build/cvitek_tdl_sdk/include/cvi_tdl"
+                "/home/thuyen/LicheeRV-Nano-Build/cvitek_tdl_sdk/include/cvi_tdl",
+                "/home/thuyen/ByteTrack-cpp/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
