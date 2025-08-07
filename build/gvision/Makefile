@@ -130,29 +130,29 @@ gvision/fast:
 	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/build
 .PHONY : gvision/fast
 
-AI/detection.o: AI/detection.cc.o
-.PHONY : AI/detection.o
+AI/detector.o: AI/detector.cc.o
+.PHONY : AI/detector.o
 
 # target to build an object file
-AI/detection.cc.o:
-	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/AI/detection.cc.o
-.PHONY : AI/detection.cc.o
+AI/detector.cc.o:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/AI/detector.cc.o
+.PHONY : AI/detector.cc.o
 
-AI/detection.i: AI/detection.cc.i
-.PHONY : AI/detection.i
+AI/detector.i: AI/detector.cc.i
+.PHONY : AI/detector.i
 
 # target to preprocess a source file
-AI/detection.cc.i:
-	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/AI/detection.cc.i
-.PHONY : AI/detection.cc.i
+AI/detector.cc.i:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/AI/detector.cc.i
+.PHONY : AI/detector.cc.i
 
-AI/detection.s: AI/detection.cc.s
-.PHONY : AI/detection.s
+AI/detector.s: AI/detector.cc.s
+.PHONY : AI/detector.s
 
 # target to generate assembly for a file
-AI/detection.cc.s:
-	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/AI/detection.cc.s
-.PHONY : AI/detection.cc.s
+AI/detector.cc.s:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/AI/detector.cc.s
+.PHONY : AI/detector.cc.s
 
 decoder/hw_decoder.o: decoder/hw_decoder.cc.o
 .PHONY : decoder/hw_decoder.o
@@ -178,6 +178,30 @@ decoder/hw_decoder.cc.s:
 	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/decoder/hw_decoder.cc.s
 .PHONY : decoder/hw_decoder.cc.s
 
+encoder/hw_encoder.o: encoder/hw_encoder.cc.o
+.PHONY : encoder/hw_encoder.o
+
+# target to build an object file
+encoder/hw_encoder.cc.o:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/encoder/hw_encoder.cc.o
+.PHONY : encoder/hw_encoder.cc.o
+
+encoder/hw_encoder.i: encoder/hw_encoder.cc.i
+.PHONY : encoder/hw_encoder.i
+
+# target to preprocess a source file
+encoder/hw_encoder.cc.i:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/encoder/hw_encoder.cc.i
+.PHONY : encoder/hw_encoder.cc.i
+
+encoder/hw_encoder.s: encoder/hw_encoder.cc.s
+.PHONY : encoder/hw_encoder.s
+
+# target to generate assembly for a file
+encoder/hw_encoder.cc.s:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/encoder/hw_encoder.cc.s
+.PHONY : encoder/hw_encoder.cc.s
+
 rtsp_reader/rtsp_reader.o: rtsp_reader/rtsp_reader.cc.o
 .PHONY : rtsp_reader/rtsp_reader.o
 
@@ -202,6 +226,30 @@ rtsp_reader/rtsp_reader.cc.s:
 	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.s
 .PHONY : rtsp_reader/rtsp_reader.cc.s
 
+sys/sys_init.o: sys/sys_init.cc.o
+.PHONY : sys/sys_init.o
+
+# target to build an object file
+sys/sys_init.cc.o:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o
+.PHONY : sys/sys_init.cc.o
+
+sys/sys_init.i: sys/sys_init.cc.i
+.PHONY : sys/sys_init.i
+
+# target to preprocess a source file
+sys/sys_init.cc.i:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.i
+.PHONY : sys/sys_init.cc.i
+
+sys/sys_init.s: sys/sys_init.cc.s
+.PHONY : sys/sys_init.s
+
+# target to generate assembly for a file
+sys/sys_init.cc.s:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.s
+.PHONY : sys/sys_init.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -211,15 +259,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... gvision"
-	@echo "... AI/detection.o"
-	@echo "... AI/detection.i"
-	@echo "... AI/detection.s"
+	@echo "... AI/detector.o"
+	@echo "... AI/detector.i"
+	@echo "... AI/detector.s"
 	@echo "... decoder/hw_decoder.o"
 	@echo "... decoder/hw_decoder.i"
 	@echo "... decoder/hw_decoder.s"
+	@echo "... encoder/hw_encoder.o"
+	@echo "... encoder/hw_encoder.i"
+	@echo "... encoder/hw_encoder.s"
 	@echo "... rtsp_reader/rtsp_reader.o"
 	@echo "... rtsp_reader/rtsp_reader.i"
 	@echo "... rtsp_reader/rtsp_reader.s"
+	@echo "... sys/sys_init.o"
+	@echo "... sys/sys_init.i"
+	@echo "... sys/sys_init.s"
 .PHONY : help
 
 

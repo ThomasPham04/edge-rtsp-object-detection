@@ -69,24 +69,52 @@ include gvision/CMakeFiles/gvision.dir/progress.make
 # Include the compile flags for this target's objects.
 include gvision/CMakeFiles/gvision.dir/flags.make
 
-gvision/CMakeFiles/gvision.dir/AI/detection.cc.o: gvision/CMakeFiles/gvision.dir/flags.make
-gvision/CMakeFiles/gvision.dir/AI/detection.cc.o: ../gvision/AI/detection.cc
-gvision/CMakeFiles/gvision.dir/AI/detection.cc.o: gvision/CMakeFiles/gvision.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object gvision/CMakeFiles/gvision.dir/AI/detection.cc.o"
-	cd /home/thuyen/libav-decoder/build/gvision && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT gvision/CMakeFiles/gvision.dir/AI/detection.cc.o -MF CMakeFiles/gvision.dir/AI/detection.cc.o.d -o CMakeFiles/gvision.dir/AI/detection.cc.o -c /home/thuyen/libav-decoder/gvision/AI/detection.cc
+gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o: gvision/CMakeFiles/gvision.dir/flags.make
+gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o: ../gvision/sys/sys_init.cc
+gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o: gvision/CMakeFiles/gvision.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o"
+	cd /home/thuyen/libav-decoder/build/gvision && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o -MF CMakeFiles/gvision.dir/sys/sys_init.cc.o.d -o CMakeFiles/gvision.dir/sys/sys_init.cc.o -c /home/thuyen/libav-decoder/gvision/sys/sys_init.cc
 
-gvision/CMakeFiles/gvision.dir/AI/detection.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gvision.dir/AI/detection.cc.i"
-	cd /home/thuyen/libav-decoder/build/gvision && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thuyen/libav-decoder/gvision/AI/detection.cc > CMakeFiles/gvision.dir/AI/detection.cc.i
+gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gvision.dir/sys/sys_init.cc.i"
+	cd /home/thuyen/libav-decoder/build/gvision && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thuyen/libav-decoder/gvision/sys/sys_init.cc > CMakeFiles/gvision.dir/sys/sys_init.cc.i
 
-gvision/CMakeFiles/gvision.dir/AI/detection.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gvision.dir/AI/detection.cc.s"
-	cd /home/thuyen/libav-decoder/build/gvision && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thuyen/libav-decoder/gvision/AI/detection.cc -o CMakeFiles/gvision.dir/AI/detection.cc.s
+gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gvision.dir/sys/sys_init.cc.s"
+	cd /home/thuyen/libav-decoder/build/gvision && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thuyen/libav-decoder/gvision/sys/sys_init.cc -o CMakeFiles/gvision.dir/sys/sys_init.cc.s
+
+gvision/CMakeFiles/gvision.dir/encoder/hw_encoder.cc.o: gvision/CMakeFiles/gvision.dir/flags.make
+gvision/CMakeFiles/gvision.dir/encoder/hw_encoder.cc.o: ../gvision/encoder/hw_encoder.cc
+gvision/CMakeFiles/gvision.dir/encoder/hw_encoder.cc.o: gvision/CMakeFiles/gvision.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object gvision/CMakeFiles/gvision.dir/encoder/hw_encoder.cc.o"
+	cd /home/thuyen/libav-decoder/build/gvision && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT gvision/CMakeFiles/gvision.dir/encoder/hw_encoder.cc.o -MF CMakeFiles/gvision.dir/encoder/hw_encoder.cc.o.d -o CMakeFiles/gvision.dir/encoder/hw_encoder.cc.o -c /home/thuyen/libav-decoder/gvision/encoder/hw_encoder.cc
+
+gvision/CMakeFiles/gvision.dir/encoder/hw_encoder.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gvision.dir/encoder/hw_encoder.cc.i"
+	cd /home/thuyen/libav-decoder/build/gvision && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thuyen/libav-decoder/gvision/encoder/hw_encoder.cc > CMakeFiles/gvision.dir/encoder/hw_encoder.cc.i
+
+gvision/CMakeFiles/gvision.dir/encoder/hw_encoder.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gvision.dir/encoder/hw_encoder.cc.s"
+	cd /home/thuyen/libav-decoder/build/gvision && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thuyen/libav-decoder/gvision/encoder/hw_encoder.cc -o CMakeFiles/gvision.dir/encoder/hw_encoder.cc.s
+
+gvision/CMakeFiles/gvision.dir/AI/detector.cc.o: gvision/CMakeFiles/gvision.dir/flags.make
+gvision/CMakeFiles/gvision.dir/AI/detector.cc.o: ../gvision/AI/detector.cc
+gvision/CMakeFiles/gvision.dir/AI/detector.cc.o: gvision/CMakeFiles/gvision.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object gvision/CMakeFiles/gvision.dir/AI/detector.cc.o"
+	cd /home/thuyen/libav-decoder/build/gvision && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT gvision/CMakeFiles/gvision.dir/AI/detector.cc.o -MF CMakeFiles/gvision.dir/AI/detector.cc.o.d -o CMakeFiles/gvision.dir/AI/detector.cc.o -c /home/thuyen/libav-decoder/gvision/AI/detector.cc
+
+gvision/CMakeFiles/gvision.dir/AI/detector.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gvision.dir/AI/detector.cc.i"
+	cd /home/thuyen/libav-decoder/build/gvision && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thuyen/libav-decoder/gvision/AI/detector.cc > CMakeFiles/gvision.dir/AI/detector.cc.i
+
+gvision/CMakeFiles/gvision.dir/AI/detector.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gvision.dir/AI/detector.cc.s"
+	cd /home/thuyen/libav-decoder/build/gvision && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thuyen/libav-decoder/gvision/AI/detector.cc -o CMakeFiles/gvision.dir/AI/detector.cc.s
 
 gvision/CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o: gvision/CMakeFiles/gvision.dir/flags.make
 gvision/CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o: ../gvision/decoder/hw_decoder.cc
 gvision/CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o: gvision/CMakeFiles/gvision.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object gvision/CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object gvision/CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o"
 	cd /home/thuyen/libav-decoder/build/gvision && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT gvision/CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o -MF CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o.d -o CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o -c /home/thuyen/libav-decoder/gvision/decoder/hw_decoder.cc
 
 gvision/CMakeFiles/gvision.dir/decoder/hw_decoder.cc.i: cmake_force
@@ -100,7 +128,7 @@ gvision/CMakeFiles/gvision.dir/decoder/hw_decoder.cc.s: cmake_force
 gvision/CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o: gvision/CMakeFiles/gvision.dir/flags.make
 gvision/CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o: ../gvision/rtsp_reader/rtsp_reader.cc
 gvision/CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o: gvision/CMakeFiles/gvision.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object gvision/CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object gvision/CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o"
 	cd /home/thuyen/libav-decoder/build/gvision && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT gvision/CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o -MF CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o.d -o CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o -c /home/thuyen/libav-decoder/gvision/rtsp_reader/rtsp_reader.cc
 
 gvision/CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.i: cmake_force
@@ -113,19 +141,23 @@ gvision/CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.s: cmake_force
 
 # Object files for target gvision
 gvision_OBJECTS = \
-"CMakeFiles/gvision.dir/AI/detection.cc.o" \
+"CMakeFiles/gvision.dir/sys/sys_init.cc.o" \
+"CMakeFiles/gvision.dir/encoder/hw_encoder.cc.o" \
+"CMakeFiles/gvision.dir/AI/detector.cc.o" \
 "CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o" \
 "CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o"
 
 # External object files for target gvision
 gvision_EXTERNAL_OBJECTS =
 
-gvision/libgvision.so: gvision/CMakeFiles/gvision.dir/AI/detection.cc.o
+gvision/libgvision.so: gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o
+gvision/libgvision.so: gvision/CMakeFiles/gvision.dir/encoder/hw_encoder.cc.o
+gvision/libgvision.so: gvision/CMakeFiles/gvision.dir/AI/detector.cc.o
 gvision/libgvision.so: gvision/CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o
 gvision/libgvision.so: gvision/CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o
 gvision/libgvision.so: gvision/CMakeFiles/gvision.dir/build.make
 gvision/libgvision.so: gvision/CMakeFiles/gvision.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libgvision.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libgvision.so"
 	cd /home/thuyen/libav-decoder/build/gvision && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gvision.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

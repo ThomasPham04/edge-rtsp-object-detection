@@ -8,9 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/thuyen/libav-decoder/gvision/AI/detection.cc" "app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.o" "gcc" "app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.o.d"
+  "/home/thuyen/libav-decoder/gvision/AI/detector.cc" "app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.o" "gcc" "app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.o.d"
   "/home/thuyen/libav-decoder/gvision/decoder/hw_decoder.cc" "app/CMakeFiles/app_AI_decode.dir/__/gvision/decoder/hw_decoder.cc.o" "gcc" "app/CMakeFiles/app_AI_decode.dir/__/gvision/decoder/hw_decoder.cc.o.d"
+  "/home/thuyen/libav-decoder/gvision/encoder/hw_encoder.cc" "app/CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.o" "gcc" "app/CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.o.d"
   "/home/thuyen/libav-decoder/gvision/rtsp_reader/rtsp_reader.cc" "app/CMakeFiles/app_AI_decode.dir/__/gvision/rtsp_reader/rtsp_reader.cc.o" "gcc" "app/CMakeFiles/app_AI_decode.dir/__/gvision/rtsp_reader/rtsp_reader.cc.o.d"
+  "/home/thuyen/libav-decoder/gvision/sys/sys_init.cc" "app/CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.o" "gcc" "app/CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.o.d"
   "/home/thuyen/libav-decoder/app/main.cc" "app/CMakeFiles/app_AI_decode.dir/main.cc.o" "gcc" "app/CMakeFiles/app_AI_decode.dir/main.cc.o.d"
   )
 

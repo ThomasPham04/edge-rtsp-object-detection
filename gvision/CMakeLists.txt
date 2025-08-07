@@ -2,13 +2,16 @@ set(PROJECT_NAME gvision)
 
 set(SRCs
 
-        AI/detection.cc
-        AI/detection.h
+        sys/sys_init.cc
+        sys/sys_init.h
+        encoder/hw_encoder.cc
+        encoder/hw_encoder.h
+        AI/detector.cc
+        AI/detector.h
         decoder/hw_decoder.cc
         decoder/hw_decoder.h
         rtsp_reader/rtsp_reader.cc
         rtsp_reader/rtsp_reader.h
-
 
 )
 

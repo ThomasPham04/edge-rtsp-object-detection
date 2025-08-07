@@ -77,23 +77,25 @@ set(SDK_APP_LIBS
 set(OPENCV_INC_PATH "${SDK_ROOT_PATH}/sample/3rd/opencv/include")
 set(OPENCV_LIB_PATH "${SDK_ROOT_PATH}/sample/3rd/opencv/lib")
 
-# OpenCV libraries
 set(OPENCV_LIBS
     opencv_core
     opencv_imgproc
     opencv_imgcodecs
 )
+#############################################
+# isp
+#############################################
+
+set(ISP_SDK_INC_PATH "${MW_PATH}/include/isp/cv181x/")
+# set(ISP_SDK_LIB_PATH "${MW_PATH}/lib")
 
 #############################################
 # IVE
 #############################################
 
-# IVE SDK include and library paths
-# IVE (TPU version) include and library paths
 set(IVE_SDK_INC_PATH "${IVE_PATH}/include")
 set(IVE_SDK_LIB_PATH "${IVE_PATH}/lib")
 
-# IVE libraries
 set(IVE_LIBS
     cvi_ive_tpu
 )
@@ -134,6 +136,17 @@ set(MD_INC_PATH "${SDK_ROOT_PATH}/include/cvi_md")
 set(DRAW_RECT_INC_PATH "${SDK_ROOT_PATH}/include/cvi_draw_rect")
 set(PREPROCESS_INC_PATH "${SDK_ROOT_PATH}/include/cvi_preprocess")
 
+# #############################################
+# # mmf_server 
+# #############################################
+# set(MMF_INC_PATH "${MW_PATH}/sample/test_mmf/media_server-1.0.1/include") 
+# set (MMF_LIB_PATH "${MW_PATH}/sample/test_mmf/media_server-1.0.1/")
+
+#############################################
+# utils 
+#############################################
+# set(UTILS_INC_PATH  "${SDK_ROOT_PATH}/sample/utils")
+
 set(CVI_TDL_INCLUDE_DIRS
     ${MW_INC_PATH}
     ${MW_INC_PATH}/linux
@@ -151,6 +164,8 @@ set(CVI_TDL_INCLUDE_DIRS
     ${MD_INC_PATH}
     ${DRAW_RECT_INC_PATH}
     ${PREPROCESS_INC_PATH}
+    ${MMF_INC_PATH}
+    ${ISP_SDK_INC_PATH}
 )
 
 set(CVI_TDL_LIBRARY_DIRS
@@ -162,6 +177,7 @@ set(CVI_TDL_LIBRARY_DIRS
     ${IVE_SDK_LIB_PATH}
     ${TPU_LIB_PATH}
     ${RTSP_LIB_PATH}
+    ${MMF_LIB_PATH}
 )
 
 set(CVI_TDL_LIBS

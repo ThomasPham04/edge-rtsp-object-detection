@@ -3,6 +3,7 @@ project(rtsp_decoder C CXX)
 
 include(cmake/ffmpeg.cmake)
 include(cmake/cvi_tdl.cmake)
+include(cmake/bytetrack.cmake)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/gvision)

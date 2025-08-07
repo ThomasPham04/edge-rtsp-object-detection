@@ -114,12 +114,12 @@ gvision/clean: gvision/CMakeFiles/gvision.dir/clean
 gvision/CMakeFiles/gvision.dir/all:
 	$(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/depend
 	$(MAKE) $(MAKESILENT) -f gvision/CMakeFiles/gvision.dir/build.make gvision/CMakeFiles/gvision.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=6,7,8,9 "Built target gvision"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=8,9,10,11,12,13 "Built target gvision"
 .PHONY : gvision/CMakeFiles/gvision.dir/all
 
 # Build rule for subdir invocation for target.
 gvision/CMakeFiles/gvision.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thuyen/libav-decoder/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thuyen/libav-decoder/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gvision/CMakeFiles/gvision.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thuyen/libav-decoder/build/CMakeFiles 0
 .PHONY : gvision/CMakeFiles/gvision.dir/rule
@@ -140,12 +140,12 @@ gvision/CMakeFiles/gvision.dir/clean:
 app/CMakeFiles/app_AI_decode.dir/all: gvision/CMakeFiles/gvision.dir/all
 	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/depend
 	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target app_AI_decode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target app_AI_decode"
 .PHONY : app/CMakeFiles/app_AI_decode.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/app_AI_decode.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thuyen/libav-decoder/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thuyen/libav-decoder/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/app_AI_decode.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/thuyen/libav-decoder/build/CMakeFiles 0
 .PHONY : app/CMakeFiles/app_AI_decode.dir/rule

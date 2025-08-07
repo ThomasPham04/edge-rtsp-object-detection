@@ -7,9 +7,11 @@
                 "/usr/local/include/opencv4",
                 "/home/thuyen/LicheeRV-Nano-Build/middleware/v2/include",
                 "/home/thuyen/LicheeRV-Nano-Build/cvitek_tdl_sdk/sample/3rd/ive/include",
+                "/home/thuyen/LicheeRV-Nano-Build/cvitek_tdl_sdk/sample/3rd/middleware/v2/include",
                 "/home/thuyen/LicheeRV-Nano-Build/cvitek_tdl_sdk/sample/3rd/tpu/include",
-                "/home/thuyen/LicheeRV-Nano-Build/cvitek_tdl_sdk/include"
-                
+                "/home/thuyen/LicheeRV-Nano-Build/cvitek_tdl_sdk/sample/3rd/rtsp/include",
+                "/home/thuyen/LicheeRV-Nano-Build/cvitek_tdl_sdk/include",
+                "/home/thuyen/LicheeRV-Nano-Build/cvitek_tdl_sdk/include/cvi_tdl"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

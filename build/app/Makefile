@@ -130,29 +130,29 @@ app_AI_decode/fast:
 	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/build
 .PHONY : app_AI_decode/fast
 
-__/gvision/AI/detection.o: __/gvision/AI/detection.cc.o
-.PHONY : __/gvision/AI/detection.o
+__/gvision/AI/detector.o: __/gvision/AI/detector.cc.o
+.PHONY : __/gvision/AI/detector.o
 
 # target to build an object file
-__/gvision/AI/detection.cc.o:
-	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.o
-.PHONY : __/gvision/AI/detection.cc.o
+__/gvision/AI/detector.cc.o:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.o
+.PHONY : __/gvision/AI/detector.cc.o
 
-__/gvision/AI/detection.i: __/gvision/AI/detection.cc.i
-.PHONY : __/gvision/AI/detection.i
+__/gvision/AI/detector.i: __/gvision/AI/detector.cc.i
+.PHONY : __/gvision/AI/detector.i
 
 # target to preprocess a source file
-__/gvision/AI/detection.cc.i:
-	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.i
-.PHONY : __/gvision/AI/detection.cc.i
+__/gvision/AI/detector.cc.i:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.i
+.PHONY : __/gvision/AI/detector.cc.i
 
-__/gvision/AI/detection.s: __/gvision/AI/detection.cc.s
-.PHONY : __/gvision/AI/detection.s
+__/gvision/AI/detector.s: __/gvision/AI/detector.cc.s
+.PHONY : __/gvision/AI/detector.s
 
 # target to generate assembly for a file
-__/gvision/AI/detection.cc.s:
-	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.s
-.PHONY : __/gvision/AI/detection.cc.s
+__/gvision/AI/detector.cc.s:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.s
+.PHONY : __/gvision/AI/detector.cc.s
 
 __/gvision/decoder/hw_decoder.o: __/gvision/decoder/hw_decoder.cc.o
 .PHONY : __/gvision/decoder/hw_decoder.o
@@ -178,6 +178,30 @@ __/gvision/decoder/hw_decoder.cc.s:
 	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/__/gvision/decoder/hw_decoder.cc.s
 .PHONY : __/gvision/decoder/hw_decoder.cc.s
 
+__/gvision/encoder/hw_encoder.o: __/gvision/encoder/hw_encoder.cc.o
+.PHONY : __/gvision/encoder/hw_encoder.o
+
+# target to build an object file
+__/gvision/encoder/hw_encoder.cc.o:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.o
+.PHONY : __/gvision/encoder/hw_encoder.cc.o
+
+__/gvision/encoder/hw_encoder.i: __/gvision/encoder/hw_encoder.cc.i
+.PHONY : __/gvision/encoder/hw_encoder.i
+
+# target to preprocess a source file
+__/gvision/encoder/hw_encoder.cc.i:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.i
+.PHONY : __/gvision/encoder/hw_encoder.cc.i
+
+__/gvision/encoder/hw_encoder.s: __/gvision/encoder/hw_encoder.cc.s
+.PHONY : __/gvision/encoder/hw_encoder.s
+
+# target to generate assembly for a file
+__/gvision/encoder/hw_encoder.cc.s:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.s
+.PHONY : __/gvision/encoder/hw_encoder.cc.s
+
 __/gvision/rtsp_reader/rtsp_reader.o: __/gvision/rtsp_reader/rtsp_reader.cc.o
 .PHONY : __/gvision/rtsp_reader/rtsp_reader.o
 
@@ -201,6 +225,30 @@ __/gvision/rtsp_reader/rtsp_reader.s: __/gvision/rtsp_reader/rtsp_reader.cc.s
 __/gvision/rtsp_reader/rtsp_reader.cc.s:
 	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/__/gvision/rtsp_reader/rtsp_reader.cc.s
 .PHONY : __/gvision/rtsp_reader/rtsp_reader.cc.s
+
+__/gvision/sys/sys_init.o: __/gvision/sys/sys_init.cc.o
+.PHONY : __/gvision/sys/sys_init.o
+
+# target to build an object file
+__/gvision/sys/sys_init.cc.o:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.o
+.PHONY : __/gvision/sys/sys_init.cc.o
+
+__/gvision/sys/sys_init.i: __/gvision/sys/sys_init.cc.i
+.PHONY : __/gvision/sys/sys_init.i
+
+# target to preprocess a source file
+__/gvision/sys/sys_init.cc.i:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.i
+.PHONY : __/gvision/sys/sys_init.cc.i
+
+__/gvision/sys/sys_init.s: __/gvision/sys/sys_init.cc.s
+.PHONY : __/gvision/sys/sys_init.s
+
+# target to generate assembly for a file
+__/gvision/sys/sys_init.cc.s:
+	cd /home/thuyen/libav-decoder/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/app_AI_decode.dir/build.make app/CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.s
+.PHONY : __/gvision/sys/sys_init.cc.s
 
 main.o: main.cc.o
 .PHONY : main.o
@@ -235,15 +283,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... app_AI_decode"
-	@echo "... __/gvision/AI/detection.o"
-	@echo "... __/gvision/AI/detection.i"
-	@echo "... __/gvision/AI/detection.s"
+	@echo "... __/gvision/AI/detector.o"
+	@echo "... __/gvision/AI/detector.i"
+	@echo "... __/gvision/AI/detector.s"
 	@echo "... __/gvision/decoder/hw_decoder.o"
 	@echo "... __/gvision/decoder/hw_decoder.i"
 	@echo "... __/gvision/decoder/hw_decoder.s"
+	@echo "... __/gvision/encoder/hw_encoder.o"
+	@echo "... __/gvision/encoder/hw_encoder.i"
+	@echo "... __/gvision/encoder/hw_encoder.s"
 	@echo "... __/gvision/rtsp_reader/rtsp_reader.o"
 	@echo "... __/gvision/rtsp_reader/rtsp_reader.i"
 	@echo "... __/gvision/rtsp_reader/rtsp_reader.s"
+	@echo "... __/gvision/sys/sys_init.o"
+	@echo "... __/gvision/sys/sys_init.i"
+	@echo "... __/gvision/sys/sys_init.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

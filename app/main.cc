@@ -1,10 +1,11 @@
 #include "rtsp_reader/rtsp_reader.h"
 #include "decoder/hw_decoder.h"
-#include "AI/detection.h"
+#include "AI/detector.h"
+#include "sys/sys_init.h"
 #include <csignal>
 #include <unistd.h>
 #include <atomic>
-
+#include "BYTETracker.h"
 // #include <opencv2/opencv.hpp>
 //      rtsp://admin:gsv@101Aa@192.168.50.4:554/Streaming/channels/101
 //      rtsp://admin:gsv@101Aa@192.168.50.5:554/Streaming/channels/101
@@ -13,7 +14,7 @@
 //      rtsp://admin:gsv@101Aa@vtech.greenstreamvision.com:8557/Streaming/channels/101
 
 // bytetrack c++ + people counting
-std::atomic<bool> stop(false);
+std::atomic<bool> stop(false);  
 
 void int_handler(int signal){
     stop = true;
@@ -32,8 +33,9 @@ int main(int argc, char* argv[]) {
     int srcWidth = reader.getVideoWidth();
     int srcHeight = reader.getVideoHeight();
     std::string codecType = reader.getCodecType();
-    
     std::cout << "Video Width: " << srcWidth << ", Height: " << srcHeight << ", Type: " << codecType << "\n";
+
+    SystemInit::init(srcWidth,srcHeight);
     HardwareDecoder decoder(srcWidth, srcHeight, codecType);
     AIDetection detector(srcWidth, srcHeight);
     AVPacket pkt;
@@ -71,7 +73,7 @@ int main(int argc, char* argv[]) {
         CVI_TDL_Free(&obj);
         av_packet_unref(&pkt);
     }
-
+    
     reader.close();
     return 0;
 }

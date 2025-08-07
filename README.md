@@ -1,16 +1,19 @@
-### Install dependencies
-#### install OpenCV
-```shell
-sudo apt update
-sudo apt install libopencv-dev
-```
-### Install ffmpeg
-```shell
-sudo apt update
-sudo apt install libavcodec-dev libavformat-dev libswscale-dev libavutil-dev libavdevice-dev libavfilter-dev
+# 📦 RTSP Hardware Decoder + YOLOv8 Object Detection (CVITEK SDK)
 
-```
-### Build
-```shell
-mkidr build && cd build && cmake .. && make -j4
-```
+This project demonstrates how to:
+- Read and decode RTSP video streams using **CVITEK hardware decoder**
+- Manage **Video Buffer (VB)** and **SYS** system
+- Run **YOLOv8 object detection** with `CVI_TDL`
+- Display or process detection results with OpenCV
+
+---
+
+## 🛠️ Requirements
+
+- CVITEK SDK (CVI_TDL, CVI_VDEC, CVI_SYS, CVI_VB, etc.)
+- g++ (C++17 or higher)
+- OpenCV
+- A CVITEK SoC (e.g. CV180x / CV182x)
+- CMake 
+
+---

@@ -8,9 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/thuyen/libav-decoder/gvision/AI/detection.cc" "gvision/CMakeFiles/gvision.dir/AI/detection.cc.o" "gcc" "gvision/CMakeFiles/gvision.dir/AI/detection.cc.o.d"
+  "/home/thuyen/libav-decoder/gvision/AI/detector.cc" "gvision/CMakeFiles/gvision.dir/AI/detector.cc.o" "gcc" "gvision/CMakeFiles/gvision.dir/AI/detector.cc.o.d"
   "/home/thuyen/libav-decoder/gvision/decoder/hw_decoder.cc" "gvision/CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o" "gcc" "gvision/CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o.d"
+  "/home/thuyen/libav-decoder/gvision/encoder/hw_encoder.cc" "gvision/CMakeFiles/gvision.dir/encoder/hw_encoder.cc.o" "gcc" "gvision/CMakeFiles/gvision.dir/encoder/hw_encoder.cc.o.d"
   "/home/thuyen/libav-decoder/gvision/rtsp_reader/rtsp_reader.cc" "gvision/CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o" "gcc" "gvision/CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o.d"
+  "/home/thuyen/libav-decoder/gvision/sys/sys_init.cc" "gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o" "gcc" "gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o.d"
   )
 
 # Targets to which this target links.

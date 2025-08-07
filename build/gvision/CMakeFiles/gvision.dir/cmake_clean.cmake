@@ -1,10 +1,14 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/gvision.dir/AI/detection.cc.o"
-  "CMakeFiles/gvision.dir/AI/detection.cc.o.d"
+  "CMakeFiles/gvision.dir/AI/detector.cc.o"
+  "CMakeFiles/gvision.dir/AI/detector.cc.o.d"
   "CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o"
   "CMakeFiles/gvision.dir/decoder/hw_decoder.cc.o.d"
+  "CMakeFiles/gvision.dir/encoder/hw_encoder.cc.o"
+  "CMakeFiles/gvision.dir/encoder/hw_encoder.cc.o.d"
   "CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o"
   "CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o.d"
+  "CMakeFiles/gvision.dir/sys/sys_init.cc.o"
+  "CMakeFiles/gvision.dir/sys/sys_init.cc.o.d"
   "libgvision.pdb"
   "libgvision.so"
 )

@@ -83,19 +83,19 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app_AI_decode.dir/main.cc.s"
 	cd /home/thuyen/libav-decoder/build/app && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thuyen/libav-decoder/app/main.cc -o CMakeFiles/app_AI_decode.dir/main.cc.s
 
-app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.o: app/CMakeFiles/app_AI_decode.dir/flags.make
-app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.o: ../gvision/AI/detection.cc
-app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.o: app/CMakeFiles/app_AI_decode.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.o"
-	cd /home/thuyen/libav-decoder/build/app && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.o -MF CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.o.d -o CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.o -c /home/thuyen/libav-decoder/gvision/AI/detection.cc
+app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.o: app/CMakeFiles/app_AI_decode.dir/flags.make
+app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.o: ../gvision/AI/detector.cc
+app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.o: app/CMakeFiles/app_AI_decode.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.o"
+	cd /home/thuyen/libav-decoder/build/app && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.o -MF CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.o.d -o CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.o -c /home/thuyen/libav-decoder/gvision/AI/detector.cc
 
-app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.i"
-	cd /home/thuyen/libav-decoder/build/app && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thuyen/libav-decoder/gvision/AI/detection.cc > CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.i
+app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.i"
+	cd /home/thuyen/libav-decoder/build/app && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thuyen/libav-decoder/gvision/AI/detector.cc > CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.i
 
-app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.s"
-	cd /home/thuyen/libav-decoder/build/app && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thuyen/libav-decoder/gvision/AI/detection.cc -o CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.s
+app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.s"
+	cd /home/thuyen/libav-decoder/build/app && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thuyen/libav-decoder/gvision/AI/detector.cc -o CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.s
 
 app/CMakeFiles/app_AI_decode.dir/__/gvision/decoder/hw_decoder.cc.o: app/CMakeFiles/app_AI_decode.dir/flags.make
 app/CMakeFiles/app_AI_decode.dir/__/gvision/decoder/hw_decoder.cc.o: ../gvision/decoder/hw_decoder.cc
@@ -125,24 +125,56 @@ app/CMakeFiles/app_AI_decode.dir/__/gvision/rtsp_reader/rtsp_reader.cc.s: cmake_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app_AI_decode.dir/__/gvision/rtsp_reader/rtsp_reader.cc.s"
 	cd /home/thuyen/libav-decoder/build/app && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thuyen/libav-decoder/gvision/rtsp_reader/rtsp_reader.cc -o CMakeFiles/app_AI_decode.dir/__/gvision/rtsp_reader/rtsp_reader.cc.s
 
+app/CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.o: app/CMakeFiles/app_AI_decode.dir/flags.make
+app/CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.o: ../gvision/sys/sys_init.cc
+app/CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.o: app/CMakeFiles/app_AI_decode.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object app/CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.o"
+	cd /home/thuyen/libav-decoder/build/app && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.o -MF CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.o.d -o CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.o -c /home/thuyen/libav-decoder/gvision/sys/sys_init.cc
+
+app/CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.i"
+	cd /home/thuyen/libav-decoder/build/app && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thuyen/libav-decoder/gvision/sys/sys_init.cc > CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.i
+
+app/CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.s"
+	cd /home/thuyen/libav-decoder/build/app && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thuyen/libav-decoder/gvision/sys/sys_init.cc -o CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.s
+
+app/CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.o: app/CMakeFiles/app_AI_decode.dir/flags.make
+app/CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.o: ../gvision/encoder/hw_encoder.cc
+app/CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.o: app/CMakeFiles/app_AI_decode.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object app/CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.o"
+	cd /home/thuyen/libav-decoder/build/app && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.o -MF CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.o.d -o CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.o -c /home/thuyen/libav-decoder/gvision/encoder/hw_encoder.cc
+
+app/CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.i"
+	cd /home/thuyen/libav-decoder/build/app && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thuyen/libav-decoder/gvision/encoder/hw_encoder.cc > CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.i
+
+app/CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.s"
+	cd /home/thuyen/libav-decoder/build/app && /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thuyen/libav-decoder/gvision/encoder/hw_encoder.cc -o CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.s
+
 # Object files for target app_AI_decode
 app_AI_decode_OBJECTS = \
 "CMakeFiles/app_AI_decode.dir/main.cc.o" \
-"CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.o" \
+"CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.o" \
 "CMakeFiles/app_AI_decode.dir/__/gvision/decoder/hw_decoder.cc.o" \
-"CMakeFiles/app_AI_decode.dir/__/gvision/rtsp_reader/rtsp_reader.cc.o"
+"CMakeFiles/app_AI_decode.dir/__/gvision/rtsp_reader/rtsp_reader.cc.o" \
+"CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.o" \
+"CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.o"
 
 # External object files for target app_AI_decode
 app_AI_decode_EXTERNAL_OBJECTS =
 
 app/app_AI_decode: app/CMakeFiles/app_AI_decode.dir/main.cc.o
-app/app_AI_decode: app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detection.cc.o
+app/app_AI_decode: app/CMakeFiles/app_AI_decode.dir/__/gvision/AI/detector.cc.o
 app/app_AI_decode: app/CMakeFiles/app_AI_decode.dir/__/gvision/decoder/hw_decoder.cc.o
 app/app_AI_decode: app/CMakeFiles/app_AI_decode.dir/__/gvision/rtsp_reader/rtsp_reader.cc.o
+app/app_AI_decode: app/CMakeFiles/app_AI_decode.dir/__/gvision/sys/sys_init.cc.o
+app/app_AI_decode: app/CMakeFiles/app_AI_decode.dir/__/gvision/encoder/hw_encoder.cc.o
 app/app_AI_decode: app/CMakeFiles/app_AI_decode.dir/build.make
 app/app_AI_decode: gvision/libgvision.so
 app/app_AI_decode: app/CMakeFiles/app_AI_decode.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable app_AI_decode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thuyen/libav-decoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable app_AI_decode"
 	cd /home/thuyen/libav-decoder/build/app && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app_AI_decode.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

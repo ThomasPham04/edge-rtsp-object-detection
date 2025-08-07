@@ -1,37 +1,23 @@
 // hw_decoder.cpp
 #include "hw_decoder.h"
 
+std::unordered_map<std::string, PAYLOAD_TYPE_E> decode_type = {
+    {"H.264", PT_H264},
+    {"H.265", PT_H265}
+};
 
-HardwareDecoder::HardwareDecoder(int width, int height, std::string codecType) {
-    CVI_S32 ret = CVI_SYS_Init();
-    if (ret != CVI_SUCCESS) {
-        std::cerr << "CVI_SYS_Init failed: " << ret << "\n";
-    }
-    VB_CONFIG_S stVbConf = {};
-    stVbConf.u32MaxPoolCnt = 1;
-    stVbConf.astCommPool[0].u32BlkSize = width * height * 3 / 2;
-    stVbConf.astCommPool[0].u32BlkCnt = 4;
-    ret = CVI_VB_SetConfig(&stVbConf);
-    if (ret != CVI_SUCCESS){
-        std::cerr << "CVI_VB_Setconfig failed\n";
-    }
-    CVI_VB_Init();
-    std::unordered_map<std::string, PAYLOAD_TYPE_E> codec_type = {
-        {"H.264", PT_H264},
-        {"H.265", PT_H265}
-    };
-
+HardwareDecoder::HardwareDecoder(int srcWidth, int srcHeight, std::string decodeType) {
     VDEC_CHN_ATTR_S attr = {};
-    attr.enType = codec_type[codecType];
+    attr.enType = decode_type[decodeType];
     attr.enMode = VIDEO_MODE_FRAME;
-    attr.u32PicWidth = width;
-    attr.u32PicHeight = height;
-    attr.u32StreamBufSize = width * height;
+    attr.u32PicWidth = srcWidth;
+    attr.u32PicHeight = srcHeight;
+    attr.u32StreamBufSize = srcWidth * srcHeight;
     attr.u32FrameBufCnt = 4;
-    attr.u32FrameBufSize = width * height * 3 / 2;
-    // attr.u32FrameBufSize = width * height;
+    attr.u32FrameBufSize = srcWidth * srcHeight * 3 / 2;
+    // attr.u32FrameBufSize = srcWidth * srcHeight;
 
-    ret = CVI_VDEC_CreateChn(vdecChn, &attr);
+    CVI_S32 ret = CVI_VDEC_CreateChn(vdecChn, &attr);
     if (ret != CVI_SUCCESS) {
         std::cerr << "CVI_VDEC_CreateChn failed: " << ret << "\n";
     }

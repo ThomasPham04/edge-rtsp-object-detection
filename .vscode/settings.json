@@ -89,7 +89,12 @@
         "cvtdl_vpss_types.h": "c",
         "cvtdl_errno.h": "c",
         "cvi_tdl_utils.h": "c",
-        "cvtdl_face_types.h": "c"
+        "cvtdl_face_types.h": "c",
+        "climits": "cpp",
+        "pthread.h": "c",
+        "cvi_comm.h": "c",
+        "sample_comm.h": "c",
+        "defs.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
     

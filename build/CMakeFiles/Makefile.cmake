@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
+  "../cmake/bytetrack.cmake"
   "../cmake/cvi_tdl.cmake"
   "../cmake/ffmpeg.cmake"
   "../cmake/riscv-toolchain.cmake"
