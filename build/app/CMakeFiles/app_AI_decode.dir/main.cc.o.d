@@ -207,24 +207,14 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/limits \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/unordered_map.h \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/erase_if.h \
- /home/thuyen/libav-decoder/gvision/AI/detector.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/functional \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/refwrap.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/std_function.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/map \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_tree.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_map.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_multimap.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/sstream \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/sstream.tcc \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/vector \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_uninitialized.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_vector.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_bvector.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/vector.tcc \
- /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/core/cvi_tdl_types_mem_internal.h \
- /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/core/cvi_tdl_types_mem.h \
- /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/core/core/cvtdl_core_types.h \
+ /home/thuyen/libav-decoder/gvision/encoder/hw_encoder.h \
+ /home/thuyen/middleware/v2/include/linux/cvi_comm_venc.h \
+ /home/thuyen/middleware/v2/include/linux/cvi_comm_rc.h \
+ /home/thuyen/middleware/v2/include/cvi_venc.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/climits \
+ /home/thuyen/cvitek_tdl_sdk/sample/3rd/rtsp/include/cvi_rtsp/rtsp.h \
+ /home/thuyen/cvitek_tdl_sdk/sample/3rd/rtsp/include/cvi_rtsp/defs.h \
+ /home/thuyen/cvitek_tdl_sdk/sample/utils/middleware_utils.h \
  /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/cvi_comm.h \
  /home/thuyen/middleware/v2/include/linux/cvi_comm_gdc.h \
  /home/thuyen/middleware/v2/include/linux/cvi_comm_vpss.h \
@@ -232,13 +222,82 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: \
  /home/thuyen/middleware/v2/include/linux/cvi_errno.h \
  /home/thuyen/middleware/v2/include/linux/cvi_math.h \
  /home/thuyen/middleware/v2/include/cvi_type.h \
+ /home/thuyen/middleware/v2/sample/common/sample_comm.h \
+ /home/thuyen/middleware/v2/include/cvi_buffer.h \
+ /home/thuyen/middleware/v2/include/linux/cvi_math.h \
+ /home/thuyen/middleware/v2/include/isp/cv181x/cvi_comm_isp.h \
+ /home/thuyen/middleware/v2/include/isp/cv181x/cvi_comm_inc.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/sys/time.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/sys/select.h \
+ /home/thuyen/middleware/v2/include/isp/cv181x/cvi_comm_3a.h \
+ /home/thuyen/middleware/v2/include/isp/cv181x/cvi_comm_isp.h \
+ /home/thuyen/middleware/v2/include/cvi_comm_sns.h \
+ /home/thuyen/middleware/v2/include/linux/cvi_comm_vi.h \
+ /home/thuyen/middleware/v2/include/linux/cvi_comm_vo.h \
+ /home/thuyen/middleware/v2/include/linux/cvi_comm_region.h \
+ /home/thuyen/middleware/v2/include/cvi_comm_adec.h \
+ /home/thuyen/middleware/v2/include/cvi_comm_aio.h \
+ /home/thuyen/middleware/v2/include/cvi_comm_aenc.h \
+ /home/thuyen/middleware/v2/include/cvi_comm_ao.h \
+ /home/thuyen/middleware/v2/include/cvi_comm_aio.h \
+ /home/thuyen/middleware/v2/include/cvi_audio.h \
+ /home/thuyen/middleware/v2/include/cvi_comm_aenc.h \
+ /home/thuyen/middleware/v2/include/cvi_comm_adec.h \
+ /home/thuyen/middleware/v2/include/cvi_mipi.h \
+ /home/thuyen/middleware/v2/include/cvi_vi.h \
+ /home/thuyen/middleware/v2/include/linux/cvi_comm_gdc.h \
+ /home/thuyen/middleware/v2/include/cvi_vpss.h \
+ /home/thuyen/middleware/v2/include/cvi_vo.h \
+ /home/thuyen/middleware/v2/include/isp/cv181x/cvi_isp.h \
+ /home/thuyen/middleware/v2/include/isp/cv181x/cvi_comm_3a.h \
+ /home/thuyen/middleware/v2/include/cvi_gdc.h \
+ /home/thuyen/middleware/v2/include/cvi_region.h \
+ /home/thuyen/middleware/v2/include/cvi_bin.h \
+ /home/thuyen/middleware/v2/sample/common/md5sum.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/vector \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_uninitialized.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_vector.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_bvector.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/vector.tcc \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/memory \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_tempbuf.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_raw_storage_iter.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/ranges_uninitialized.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ext/concurrence.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/unique_ptr.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/shared_ptr.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/shared_ptr_base.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/allocated_ptr.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/refwrap.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/shared_ptr_atomic.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/atomic_base.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/atomic_lockfree_defines.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/backward/auto_ptr.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/cstring \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/list \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_list.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/list.tcc \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/thread \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/chrono \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ratio \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ctime \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/parse_numbers.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/atomic \
+ /home/thuyen/libav-decoder/gvision/AI/detector.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/functional \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/std_function.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/map \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_tree.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_map.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_multimap.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/sstream \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/sstream.tcc \
+ /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/core/cvi_tdl_types_mem_internal.h \
+ /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/core/cvi_tdl_types_mem.h \
+ /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/core/core/cvtdl_core_types.h \
  /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/core/face/cvtdl_face_types.h \
  /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/core/object/cvtdl_object_types.h \
  /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/core/utils/vpss_helper.h \
- /home/thuyen/middleware/v2/include/cvi_buffer.h \
- /home/thuyen/middleware/v2/include/linux/cvi_math.h \
- /home/thuyen/middleware/v2/include/cvi_vpss.h \
- /home/thuyen/middleware/v2/include/linux/cvi_comm_gdc.h \
  /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/cvi_tdl.h \
  /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/core/core/cvtdl_errno.h \
  /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/core/cvi_tdl_core.h \
@@ -258,15 +317,12 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: \
  /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/service/cvi_tdl_service_types.h \
  /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/cvi_tdl_media.h \
  /home/thuyen/libav-decoder/gvision/sys/sys_init.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/cstring \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/csignal \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/signal.h \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/bits/signal.h \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/unistd.h \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/bits/posix.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/atomic \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/atomic_base.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/atomic_lockfree_defines.h \
+ /home/thuyen/libav-decoder/app/stream.h \
  /home/thuyen/ByteTrack-cpp/include/ByteTrack/BYTETracker.h \
  /home/thuyen/ByteTrack-cpp/include/ByteTrack/STrack.h \
  /home/thuyen/ByteTrack-cpp/include/ByteTrack/Rect.h \
@@ -279,12 +335,10 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/cstddef \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/cassert \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/assert.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/climits \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/algorithm \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_algo.h \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/algorithmfwd.h \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_heap.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_tempbuf.h \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/uniform_int_dist.h \
  /usr/include/eigen3/Eigen/src/Core/util/Constants.h \
  /usr/include/eigen3/Eigen/src/Core/util/Meta.h \
@@ -463,14 +517,4 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: \
  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
  /home/thuyen/ByteTrack-cpp/include/ByteTrack/KalmanFilter.h \
  /home/thuyen/ByteTrack-cpp/include/ByteTrack/lapjv.h \
- /home/thuyen/ByteTrack-cpp/include/ByteTrack/Object.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/memory \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_raw_storage_iter.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/ranges_uninitialized.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ext/concurrence.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/unique_ptr.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/shared_ptr.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/shared_ptr_base.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/allocated_ptr.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/shared_ptr_atomic.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/backward/auto_ptr.h
+ /home/thuyen/ByteTrack-cpp/include/ByteTrack/Object.h

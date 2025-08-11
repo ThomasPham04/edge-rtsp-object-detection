@@ -95,7 +95,8 @@
         "cvi_comm.h": "c",
         "sample_comm.h": "c",
         "defs.h": "c",
-        "source_location": "cpp"
+        "source_location": "cpp",
+        "alignedvector3": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
     

@@ -1,14 +1,8 @@
 // hw_decoder.cpp
 #include "hw_decoder.h"
-
-std::unordered_map<std::string, PAYLOAD_TYPE_E> decode_type = {
-    {"H.264", PT_H264},
-    {"H.265", PT_H265}
-};
-
-HardwareDecoder::HardwareDecoder(int srcWidth, int srcHeight, std::string decodeType) {
+HardwareDecoder::HardwareDecoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E decodeType) {
     VDEC_CHN_ATTR_S attr = {};
-    attr.enType = decode_type[decodeType];
+    attr.enType = decodeType;
     attr.enMode = VIDEO_MODE_FRAME;
     attr.u32PicWidth = srcWidth;
     attr.u32PicHeight = srcHeight;

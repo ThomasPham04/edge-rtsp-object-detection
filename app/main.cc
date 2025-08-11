@@ -1,20 +1,19 @@
 #include "rtsp_reader/rtsp_reader.h"
 #include "decoder/hw_decoder.h"
+#include "encoder/hw_encoder.h"
 #include "AI/detector.h"
 #include "sys/sys_init.h"
 #include <csignal>
 #include <unistd.h>
 #include <atomic>
 #include <vector>
+#include "stream.h"
 #include "BYTETracker.h"
-// #include <opencv2/opencv.hpp>
-//      rtsp://admin:gsv@101Aa@192.168.50.4:554/Streaming/channels/101
-//      rtsp://admin:gsv@101Aa@192.168.50.5:554/Streaming/channels/101
-//      rtsp://admin:admin@116.193.72.50:8554:8554/ch1/1
-//      rtsp://admin:gsv@101Aa@vtech.greenstreamvision.com:8556/Streaming/channels/101
-//      rtsp://admin:gsv@101Aa@vtech.greenstreamvision.com:8557/Streaming/channels/101
 
-// bytetrack c++ + people counting
+std::unordered_map<std::string, PAYLOAD_TYPE_E> decode_type = {
+        {"H.264", PT_H264},
+        {"H.265", PT_H265}
+};
 std::atomic<bool> stop(false);  
 
 void int_handler(int signal){
@@ -32,7 +31,7 @@ int main(int argc, char* argv[]) {
     RtspReader reader;
     signal(SIGINT, int_handler);
     std::cout << "-------------------Hardware Decoder-------------------\n";
-    if (!reader.open("rtsp://admin:gsv@101Aa@vtech.greenstreamvision.com:8557/Streaming/channels/101")){
+    if (!reader.open(ip.c_str())){
         std::cerr << "Failed to open\n";
         return -1;
     }  else {
@@ -45,13 +44,22 @@ int main(int argc, char* argv[]) {
     std::cout << "Video Width: " << srcWidth << ", Height: " << srcHeight << ", Type: " << codecType << "\n";
 
     SystemInit::init(srcWidth,srcHeight);
-    HardwareDecoder decoder(srcWidth, srcHeight, codecType);
+    rtspServer ser;
+    ser.init(8854, 4);
+    rtspSession *session = ser.createSession("cam1", RTSP_VIDEO_H264);
+
+
+    CVI_RTSP_TRACK videoTrack = nullptr; 
+
+    PAYLOAD_TYPE_E type = decode_type[codecType];
+
+    HardwareDecoder decoder(srcWidth, srcHeight, type);
+    HardwareEncoder encoder(srcWidth, srcHeight, type);
     AIDetection detector(srcWidth, srcHeight);
     AVPacket pkt;
     VIDEO_FRAME_INFO_S frame;
     CVI_TDL_SUPPORTED_MODEL_E model = CVI_TDL_SUPPORTED_MODEL_YOLOV8_DETECTION;
     cvtdl_object_t obj = {0}; 
-    int count = 0;
     
     while (!stop && reader.readPacket(pkt)) {
         std::cout   << "\nPacket size: " << pkt.size
@@ -74,8 +82,7 @@ int main(int argc, char* argv[]) {
                         obj.info[i].bbox.x2,
                         obj.info[i].bbox.y2
                     );
-                    byte_track::Object person(rect, 0, obj.info[i].bbox.score);
-                    detected_objects.push_back(person);
+                    detected_objects.emplace_back(rect, 0, obj.info[i].bbox.score);
                 }
             }
 
@@ -88,18 +95,44 @@ int main(int argc, char* argv[]) {
                         << ", y=" << rect.y()
                         << ", width=" << rect.width()
                         << ", height=" << rect.height() << "\n";
+                cvitdl_service_handle_t handle;
+                cvtdl_object_t obj_meta = {0};
+                cvtdl_service_brush_t brushi;
+                brushi.color.r = 255;
+                brushi.color.g = 255;
+                brushi.color.b = 255;
+                brushi.size = 4;
+
+                obj_meta.size = 1;
+                obj_meta.rescale_type = meta_rescale_type_e::RESCALE_CENTER;
+                obj_meta.info = (cvtdl_object_info_t *)malloc(sizeof(cvtdl_object_info_t) * obj_meta.size);
+                obj_meta.info[0].bbox.x1 = rect.x();
+                obj_meta.info[0].bbox.y1 = rect.y();
+                obj_meta.info[0].bbox.x2 = rect.x() + rect.width();
+                obj_meta.info[0].bbox.y2 = rect.y() + rect.height();
+                CVI_TDL_Service_ObjectDrawRect(handle, &obj_meta, &frame, false, brushi);
             }
 
+            
+            if (encoder.sendFrame(&frame)) {
+                VENC_STREAM_S stStream;
+                memset(&stStream, 0, sizeof(stStream));
+                session->writeFrame(stStream.pstPack->pu8Addr, stStream.pstPack->u32Len, stStream.pstPack->u64PTS);
+                encoder.getStream(&stStream);
+                 // Prepare RTSP data
 
-
+                // Release stream back to encoder
+                CVI_VENC_ReleaseStream(encoder.getVencChn(), &stStream);
+            }
             decoder.releaseFrame(&frame);
         }
 
-        count++;
         CVI_TDL_Free(&obj);
         av_packet_unref(&pkt);
     }
-    
+    // CVI_RTSP_DestroySession(rtspCtx, session);
+    // CVI_RTSP_Stop(rtspCtx);
+    // CVI_RTSP_Destroy(&rtspCtx);
     reader.close();
     return 0;
 }

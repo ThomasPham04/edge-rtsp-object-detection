@@ -8,6 +8,11 @@
 #include <iostream>
 #include <string>
 #include <unordered_map>
+// std::unordered_map<std::string, PAYLOAD_TYPE_E> decode_type = {
+//         {"H.264", PT_H264},
+//         {"H.265", PT_H265}
+// };
+
 class HardwareDecoder {
 public:
     ~HardwareDecoder(){
@@ -17,7 +22,7 @@ public:
         CVI_SYS_Exit();
         CVI_VB_Exit();
     }
-    HardwareDecoder(int width, int height, std::string codecType);
+    HardwareDecoder(int width, int height, PAYLOAD_TYPE_E codecType);
     bool sendPacket(uint8_t *data, uint32_t size, int64_t pts);
     bool getFrame(VIDEO_FRAME_INFO_S *pFrame);
     void releaseFrame(VIDEO_FRAME_INFO_S *pFrame);
