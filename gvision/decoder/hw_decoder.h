@@ -18,9 +18,7 @@ public:
     ~HardwareDecoder(){
         CVI_VDEC_StopRecvStream(vdecChn);
         CVI_VDEC_DestroyChn(vdecChn);
-        CVI_VB_DestroyPool(0);
-        CVI_SYS_Exit();
-        CVI_VB_Exit();
+        // System/VB lifetime is managed by SystemInit
     }
     HardwareDecoder(int width, int height, PAYLOAD_TYPE_E codecType);
     bool sendPacket(uint8_t *data, uint32_t size, int64_t pts);

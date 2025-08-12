@@ -31,6 +31,25 @@ bool AIDetection::openModel(const std::string& url, CVI_TDL_SUPPORTED_MODEL_E mo
         std::cerr << "Failed to start model\n";
         return false;
     }
+    modelOpened = true;
+    return true;
+}
+
+void AIDetection::setThresholds(CVI_TDL_SUPPORTED_MODEL_E model, float threshold, float nms_threshold) {
+    CVI_TDL_SetModelThreshold(this->handle, model, threshold);
+    CVI_TDL_SetModelNmsThreshold(this->handle, model, nms_threshold);
+}
+
+bool AIDetection::ensureImageProcessor() {
+    if (!imageProcessorCreated) {
+        // Ask the SDK to use smaller internal buffers when possible
+        if (CVI_TDL_Create_ImageProcessor(&(this->img_handle)) == CVI_SUCCESS) {
+            imageProcessorCreated = true;
+        } else {
+            std::cerr << "Failed to create image processor\n";
+            return false;
+        }
+    }
     return true;
 }
 
@@ -40,12 +59,15 @@ void AIDetection::objDectection (   const std::string& url,
                                     cvtdl_object_t *obj,
                                     float threshold
                                 ){
-    this->openModel(url.c_str(), model);
-    
-    CVI_TDL_SetModelThreshold(this->handle, model, threshold);
-    CVI_TDL_SetModelNmsThreshold(this->handle, model, threshold);
-
-    CVI_TDL_Create_ImageProcessor(&(this->img_handle));
+    // Model and thresholds should be configured once outside the loop
+    (void)url; // unused
+    if (!modelOpened) {
+        std::cerr << "Model not opened. Call openModel() before detection.\n";
+        return;
+    }
+    if (!ensureImageProcessor()) {
+        return;
+    }
     CVI_S32 ret = CVI_TDL_YOLOV8_Detection(this->handle, frame, obj);
     if (ret != CVI_SUCCESS) {
         std::cerr << "Detection failed with code: " << ret << "\n";

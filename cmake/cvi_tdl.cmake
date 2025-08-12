@@ -191,6 +191,7 @@ set(CVI_TDL_LIBS
     ${RTSP_LIBS}
     pthread
     atomic
+    cvi_draw_rect
 )
 
 message(STATUS "===========!!!!!!!!!!!!!!!!!!!1>${SDK_TDL_INC_PATH}")

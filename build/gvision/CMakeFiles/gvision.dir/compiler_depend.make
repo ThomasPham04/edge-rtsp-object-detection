@@ -584,13 +584,7 @@ gvision/CMakeFiles/gvision.dir/encoder/hw_encoder.cc.o: ../gvision/encoder/hw_en
   /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/cstring \
   /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/list \
   /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_list.h \
-  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/list.tcc \
-  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/thread \
-  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/chrono \
-  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ratio \
-  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ctime \
-  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/parse_numbers.h \
-  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/atomic
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/list.tcc
 
 gvision/CMakeFiles/gvision.dir/rtsp_reader/rtsp_reader.cc.o: ../gvision/rtsp_reader/rtsp_reader.cc \
   /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/stdc-predef.h \
@@ -897,7 +891,8 @@ gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o: ../gvision/sys/sys_init.cc \
   /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/basic_ios.tcc \
   /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/ostream.tcc \
   /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/istream \
-  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/istream.tcc
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/istream.tcc \
+  /home/thuyen/middleware/v2/include/linux/cvi_comm_sys.h
 
 
 ../gvision/sys/sys_init.h:
@@ -940,21 +935,11 @@ gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o: ../gvision/sys/sys_init.cc \
 
 /home/thuyen/ffmpeg_libs_n4.4.4.2/include/libavutil/macros.h:
 
-/home/thuyen/ffmpeg_libs_n4.4.4.2/include/libavutil/attributes.h:
-
-/home/thuyen/ffmpeg_libs_n4.4.4.2/include/libavutil/common.h:
-
-/home/thuyen/ffmpeg_libs_n4.4.4.2/include/libavutil/avutil.h:
-
-/home/thuyen/ffmpeg_libs_n4.4.4.2/include/libavcodec/avcodec.h:
-
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ostream:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/streambuf_iterator.h:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/wctype.h:
-
-/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/chrono:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/stdexcept:
 
@@ -965,6 +950,8 @@ gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o: ../gvision/sys/sys_init.cc \
 ../gvision/sys/sys_init.cc:
 
 /home/thuyen/middleware/v2/include/cvi_venc.h:
+
+/home/thuyen/ffmpeg_libs_n4.4.4.2/include/libavutil/common.h:
 
 /home/thuyen/middleware/v2/include/linux/cvi_comm_video.h:
 
@@ -1009,8 +996,6 @@ gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o: ../gvision/sys/sys_init.cc \
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/riscv64-unknown-linux-musl/lib64xthead/lp64d/bits/gthr-default.h:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/ios_base.h:
-
-/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/thread:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_vector.h:
 
@@ -1120,6 +1105,8 @@ gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o: ../gvision/sys/sys_init.cc \
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/ctype.h:
 
+/home/thuyen/ffmpeg_libs_n4.4.4.2/include/libavutil/attributes.h:
+
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/invoke.h:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/asm-generic/bitsperlong.h:
@@ -1161,8 +1148,6 @@ gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o: ../gvision/sys/sys_init.cc \
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/exception:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/alloca.h:
-
-/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/parse_numbers.h:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/cctype:
 
@@ -1223,6 +1208,8 @@ gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o: ../gvision/sys/sys_init.cc \
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/riscv64-unknown-linux-musl/lib64xthead/lp64d/bits/os_defines.h:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_iterator_base_types.h:
+
+/home/thuyen/ffmpeg_libs_n4.4.4.2/include/libavutil/avutil.h:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/functional:
 
@@ -1323,8 +1310,6 @@ gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o: ../gvision/sys/sys_init.cc \
 /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/core/core/cvtdl_core_types.h:
 
 /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/cvi_comm.h:
-
-/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ratio:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/sys/select.h:
 
@@ -1430,12 +1415,6 @@ gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o: ../gvision/sys/sys_init.cc \
 
 /home/thuyen/middleware/v2/include/linux/cvi_comm_rc.h:
 
-/home/thuyen/ffmpeg_libs_n4.4.4.2/include/libavformat/avformat.h:
-
-/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ctime:
-
-/home/thuyen/cvitek_tdl_sdk/sample/3rd/rtsp/include/cvi_rtsp/rtsp.h:
-
 ../gvision/rtsp_reader/rtsp_reader.cc:
 
 /home/thuyen/cvitek_tdl_sdk/sample/utils/middleware_utils.h:
@@ -1456,11 +1435,9 @@ gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o: ../gvision/sys/sys_init.cc \
 
 /home/thuyen/middleware/v2/include/cvi_vi.h:
 
-/home/thuyen/ffmpeg_libs_n4.4.4.2/include/libavutil/samplefmt.h:
-
-/home/thuyen/middleware/v2/include/isp/cv181x/cvi_isp.h:
-
 /home/thuyen/middleware/v2/include/cvi_gdc.h:
+
+/home/thuyen/ffmpeg_libs_n4.4.4.2/include/libavcodec/avcodec.h:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/functexcept.h:
 
@@ -1480,4 +1457,10 @@ gvision/CMakeFiles/gvision.dir/sys/sys_init.cc.o: ../gvision/sys/sys_init.cc \
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_list.h:
 
-/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/atomic:
+/home/thuyen/cvitek_tdl_sdk/sample/3rd/rtsp/include/cvi_rtsp/rtsp.h:
+
+/home/thuyen/ffmpeg_libs_n4.4.4.2/include/libavformat/avformat.h:
+
+/home/thuyen/middleware/v2/include/isp/cv181x/cvi_isp.h:
+
+/home/thuyen/ffmpeg_libs_n4.4.4.2/include/libavutil/samplefmt.h:

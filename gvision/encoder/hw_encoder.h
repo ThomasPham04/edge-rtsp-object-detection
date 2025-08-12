@@ -12,6 +12,7 @@
 #include <memory>
 #include <cstring>
 #include <list>
+#define ALIGN_UP(x, align) (((x) + (align) - 1) & ~((align) - 1))
 // std::unordered_map<std::string, PAYLOAD_TYPE_E> encode_type = {
 //         {"H.264", PT_H264},
 //         {"H.265", PT_H265}
@@ -19,6 +20,7 @@
 class HardwareEncoder {
 private:
     VENC_CHN veChn=0;
+    bool started = false;
 public:
     HardwareEncoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E encodeType);
     ~HardwareEncoder(){
@@ -28,6 +30,9 @@ public:
     bool sendFrame(const VIDEO_FRAME_INFO_S* frame);
     bool getStream(VENC_STREAM_S *stream);
     VENC_CHN getVencChn(){return veChn;}
+    bool isStarted() const { return started; }
+    void releaseStream(VENC_STREAM_S *stStream);
+    
 };
 
 class rtspSession {
@@ -38,6 +43,11 @@ private:
 
 public:
     rtspSession() = default;
+    // prevent accidental copying which may double-free RTSP session
+    rtspSession(const rtspSession&) = delete;
+    rtspSession& operator=(const rtspSession&) = delete;
+    rtspSession(rtspSession&&) = default;
+    rtspSession& operator=(rtspSession&&) = default;
     
     rtspSession(CVI_RTSP_CTX* ctx, const std::string& name, CVI_RTSP_VIDEO_CODEC codec);
     ~rtspSession();

@@ -1,22 +1,35 @@
 #include "hw_encoder.h"
 HardwareEncoder::HardwareEncoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E encodeType) {
+    // CVI_VENC_DestroyChn(veChn);
+
     CVI_S32 ret;
-    VENC_CHN_ATTR_S chnAttr;
+    VENC_CHN_ATTR_S chnAttr, *ptrChnAttr = &chnAttr;
     memset(&chnAttr, 0, sizeof(chnAttr));
 
     
+    // honor requested encode type (H.264/H.265)
     chnAttr.stVencAttr.enType          = encodeType;
     chnAttr.stVencAttr.u32PicWidth     = srcWidth;
     chnAttr.stVencAttr.u32PicHeight    = srcHeight;
     chnAttr.stVencAttr.u32MaxPicWidth  = srcWidth;
     chnAttr.stVencAttr.u32MaxPicHeight = srcHeight;
-    chnAttr.stVencAttr.u32BufSize      = srcWidth * srcHeight * 3 / 2;
-    
+    // Stream buffer size: reduce to save ION memory while keeping enough for high bitrate
+    chnAttr.stVencAttr.u32BufSize = ALIGN(srcWidth, 16) * ALIGN(srcHeight, 16);
+    // Set sensible profiles
     if (encodeType == PT_H264) {
-        chnAttr.stVencAttr.u32Profile = 100; 
+        // conservative default profile for compatibility
+        chnAttr.stVencAttr.u32Profile = 1;
     } else if (encodeType == PT_H265) {
-        chnAttr.stVencAttr.u32Profile = 0; 
+        // 0: Main
+        chnAttr.stVencAttr.u32Profile = 0;
+    } else {
+        chnAttr.stVencAttr.u32Profile = 1;
     }
+    // if (encodeType == PT_H264) {
+    //     chnAttr.stVencAttr.u32Profile = 100; 
+    // } else if (encodeType == PT_H265) {
+    //     chnAttr.stVencAttr.u32Profile = 0; 
+    // }
 
     chnAttr.stVencAttr.bByFrame        = CVI_TRUE;
     chnAttr.stVencAttr.bSingleCore     = CVI_FALSE;
@@ -24,35 +37,58 @@ HardwareEncoder::HardwareEncoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E enc
     chnAttr.stVencAttr.bIsoSendFrmEn   = CVI_FALSE;
 
     
-    chnAttr.stRcAttr.enRcMode = VENC_RC_MODE_H264CBR;
-    chnAttr.stRcAttr.stH264Cbr.u32Gop = 40; 
-    chnAttr.stRcAttr.stH264Cbr.u32BitRate = 8000; 
-    chnAttr.stRcAttr.stH264Cbr.u32SrcFrameRate = 20;
-    chnAttr.stRcAttr.stH264Cbr.fr32DstFrameRate = 20;
+    // Configure rate control depending on codec
+    if (encodeType == PT_H264) {
+        chnAttr.stRcAttr.enRcMode = VENC_RC_MODE_H264CBR;
+        chnAttr.stRcAttr.stH264Cbr.u32Gop = 60; // ~2x fps
+        chnAttr.stRcAttr.stH264Cbr.u32BitRate = 8000000; 
+        chnAttr.stRcAttr.stH264Cbr.u32SrcFrameRate = 30;
+        chnAttr.stRcAttr.stH264Cbr.fr32DstFrameRate = 30;
+    } else if (encodeType == PT_H265) {
+        chnAttr.stRcAttr.enRcMode = VENC_RC_MODE_H265CBR;
+        chnAttr.stRcAttr.stH265Cbr.u32Gop = 60;
+        chnAttr.stRcAttr.stH265Cbr.u32BitRate = 8000000;
+        chnAttr.stRcAttr.stH265Cbr.u32SrcFrameRate = 30;
+        chnAttr.stRcAttr.stH265Cbr.fr32DstFrameRate = 30;
+    } else {
+        // default to H.264 CBR if unknown
+        chnAttr.stRcAttr.enRcMode = VENC_RC_MODE_H264CBR;
+        chnAttr.stRcAttr.stH264Cbr.u32Gop = 60;
+        chnAttr.stRcAttr.stH264Cbr.u32BitRate = 8000000;
+        chnAttr.stRcAttr.stH264Cbr.u32SrcFrameRate = 30;
+        chnAttr.stRcAttr.stH264Cbr.fr32DstFrameRate = 30;
+    }
 
     
     chnAttr.stGopAttr.enGopMode = VENC_GOPMODE_NORMALP;
-    chnAttr.stGopAttr.stNormalP.s32IPQpDelta = 2;
 
     
     ret = CVI_VENC_CreateChn(this->veChn, &chnAttr);
     if (ret != CVI_SUCCESS) {
-        std::cerr << "CVI_VENC_CreateChn failed: " << ret << "\n";
+        std::cerr << "\nCVI_VENC_CreateChn failed: " << ret << "\n";
         return;
+    } else {
+        std::cout << "HardwareEncoder create channel successfully\n";
     }
 
     
     VENC_RECV_PIC_PARAM_S recAttr;
-    recAttr.s32RecvPicNum = -1; 
+    memset(&recAttr, 0, sizeof(recAttr));
+    // -1 means receive frames indefinitely per SDK convention
+    recAttr.s32RecvPicNum = -1;
     ret = CVI_VENC_StartRecvFrame(this->veChn, &recAttr);
     if (ret != CVI_SUCCESS) {
-        std::cerr << "CVI_VENC_StartRecvFrame failed: " << ret << "\n";
+        std::cerr << "\nCVI_VENC_StartRecvFrame failed: " << ret << "\n";
+    } else {
+        std::cout << "Encoder init successfully\n";
+        this->started = true;
     }
+
 }
 
 
 bool HardwareEncoder::sendFrame(const VIDEO_FRAME_INFO_S* frame){
-    CVI_S32 ret = CVI_VENC_SendFrame(this->veChn, frame, 2000);
+    CVI_S32 ret = CVI_VENC_SendFrame(this->veChn, frame, -1);
     if (ret != CVI_SUCCESS) {
         std::cerr << "CVI_VENC_SendFrame failed with error: " << ret << "\n";
         return false;
@@ -68,6 +104,10 @@ bool HardwareEncoder::getStream(VENC_STREAM_S *stream){
         return false;
     }    
     return true;
+}
+
+void HardwareEncoder::releaseStream(VENC_STREAM_S *stStream) {
+    CVI_VENC_ReleaseStream(this->veChn, stStream);
 }
 
 rtspServer::~rtspServer() {
@@ -111,17 +151,9 @@ rtspSession* rtspServer::createSession(const std::string& name, CVI_RTSP_VIDEO_C
         return nullptr;
     }
 
-    // emplace a default-constructed session at the end
-    sessions.emplace_back();               // construct in-place
-    rtspSession& sref = sessions.back();   // safe: list won't invalidate
-
-    // initialize the session object using its ctor-like initializer
-    // we call placement-style constructor by assignment via the dedicated constructor:
-    // (we prefer call explicit constructor logic from rtspSession class; here we call its constructor-like init)
-    // But we actually have constructor that takes ctx,name,codec — use temporary and move-assign:
-    *(&sref) = rtspSession(rtspCtx, name, codec); // move-assign-constructed object into list element
-
-    return &sref;
+    // Construct the session in-place to avoid any temporary copies
+    sessions.emplace_back(rtspCtx, name, codec);
+    return &sessions.back();
 }
 
 /* ---------------- rtspSession implementation ---------------- */
@@ -182,3 +214,4 @@ bool rtspSession::writeFrame(const uint8_t* data, uint32_t len, uint64_t timesta
     }
     return true;
 }
+

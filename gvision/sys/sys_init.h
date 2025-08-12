@@ -4,6 +4,7 @@
 #include <cvi_comm_video.h>
 #include <cstring>
 #include <iostream>
+#include "cvi_comm_sys.h"
 
 class SystemInit{
     public:

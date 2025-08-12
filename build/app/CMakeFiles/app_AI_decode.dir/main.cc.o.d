@@ -277,12 +277,6 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/list \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_list.h \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/list.tcc \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/thread \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/chrono \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ratio \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ctime \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/parse_numbers.h \
- /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/atomic \
  /home/thuyen/libav-decoder/gvision/AI/detector.h \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/functional \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/std_function.h \
@@ -317,11 +311,13 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: \
  /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/service/cvi_tdl_service_types.h \
  /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/cvi_tdl_media.h \
  /home/thuyen/libav-decoder/gvision/sys/sys_init.h \
+ /home/thuyen/middleware/v2/include/linux/cvi_comm_sys.h \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/csignal \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/signal.h \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/bits/signal.h \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/unistd.h \
  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/bits/posix.h \
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/atomic \
  /home/thuyen/libav-decoder/app/stream.h \
  /home/thuyen/ByteTrack-cpp/include/ByteTrack/BYTETracker.h \
  /home/thuyen/ByteTrack-cpp/include/ByteTrack/STrack.h \
@@ -517,4 +513,5 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: \
  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
  /home/thuyen/ByteTrack-cpp/include/ByteTrack/KalmanFilter.h \
  /home/thuyen/ByteTrack-cpp/include/ByteTrack/lapjv.h \
- /home/thuyen/ByteTrack-cpp/include/ByteTrack/Object.h
+ /home/thuyen/ByteTrack-cpp/include/ByteTrack/Object.h \
+ /home/thuyen/cvitek_tdl_sdk/include/cvi_draw_rect/cvi_draw_rect.h
