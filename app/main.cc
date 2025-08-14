@@ -73,7 +73,7 @@ int main(int argc, char* argv[]) {
     VENC_STREAM_S stStream;
     cvtdl_object_t obj = {0}; 
     
-    while (!stop && reader.readPacket(pkt)) {
+    while (reader.readPacket(pkt)) {
             // Reduce log noise to save CPU and avoid flooding
             // std::cout   << "\nPacket size: " << pkt.size
             //             << " PTS: " << pkt.pts
@@ -210,10 +210,9 @@ int main(int argc, char* argv[]) {
 
         CVI_TDL_Free(&obj);
         av_packet_unref(&pkt);
+
+        if(stop) break;
     }
-    
-    
-    
     reader.close();
     return 0;
 }

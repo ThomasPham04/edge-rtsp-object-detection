@@ -13,6 +13,7 @@ HardwareDecoder::HardwareDecoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E dec
     // reduce frame buffer count to ease memory pressure
     attr.u32FrameBufCnt = 3;
     attr.u32FrameBufSize = alignW * alignH * 3 / 2;
+    // Prefer low-latency single-core path if available
     // attr.u32FrameBufSize = srcWidth * srcHeight;
 
     CVI_S32 ret = CVI_VDEC_CreateChn(vdecChn, &attr);

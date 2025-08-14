@@ -1213,6 +1213,21 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: ../app/main.cc \
   /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/unistd.h \
   /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/bits/posix.h \
   /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/atomic \
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/thread \
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/chrono \
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ratio \
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ctime \
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/parse_numbers.h \
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/mutex \
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/std_mutex.h \
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/unique_lock.h \
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/condition_variable \
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/queue \
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/deque \
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_deque.h \
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/deque.tcc \
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_heap.h \
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_queue.h \
   ../app/stream.h \
   /home/thuyen/ByteTrack-cpp/include/ByteTrack/BYTETracker.h \
   /home/thuyen/ByteTrack-cpp/include/ByteTrack/STrack.h \
@@ -1230,7 +1245,6 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: ../app/main.cc \
   /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/algorithm \
   /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_algo.h \
   /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/algorithmfwd.h \
-  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_heap.h \
   /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/uniform_int_dist.h \
   /usr/include/eigen3/Eigen/src/Core/util/Constants.h \
   /usr/include/eigen3/Eigen/src/Core/util/Meta.h \
@@ -1432,8 +1446,6 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: ../app/main.cc \
 
 /usr/include/eigen3/Eigen/Eigenvalues:
 
-/usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h:
-
 /usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h:
 
 /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h:
@@ -1528,8 +1540,6 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: ../app/main.cc \
 
 /usr/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h:
 
-/usr/include/eigen3/Eigen/src/Core/Array.h:
-
 /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h:
 
 /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h:
@@ -1612,8 +1622,6 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: ../app/main.cc \
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/uniform_int_dist.h:
 
-/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_heap.h:
-
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/algorithmfwd.h:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_algo.h:
@@ -1646,6 +1654,22 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: ../app/main.cc \
 
 /home/thuyen/ByteTrack-cpp/include/ByteTrack/BYTETracker.h:
 
+/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_queue.h:
+
+/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_heap.h:
+
+/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/deque.tcc:
+
+/usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h:
+
+/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/std_mutex.h:
+
+/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ratio:
+
+/usr/include/eigen3/Eigen/src/Core/Array.h:
+
+/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/chrono:
+
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/atomic:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/bits/signal.h:
@@ -1669,6 +1693,8 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: ../app/main.cc \
 /home/thuyen/ffmpeg_libs_n4.4.4.2/include/libavcodec/version.h:
 
 /home/thuyen/ffmpeg_libs_n4.4.4.2/include/libavcodec/codec_par.h:
+
+/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/unique_lock.h:
 
 /home/thuyen/ffmpeg_libs_n4.4.4.2/include/libavcodec/codec_id.h:
 
@@ -1787,6 +1813,8 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: ../app/main.cc \
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/riscv64-unknown-linux-musl/lib64xthead/lp64d/bits/gthr-default.h:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/ios_base.h:
+
+/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/thread:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_vector.h:
 
@@ -1992,6 +2020,8 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: ../app/main.cc \
 
 /usr/include/eigen3/Eigen/src/Core/Ref.h:
 
+/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/parse_numbers.h:
+
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/cctype:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/predefined_ops.h:
@@ -2007,6 +2037,8 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: ../app/main.cc \
 /home/thuyen/middleware/v2/include/cvi_vo.h:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/cstring:
+
+/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_deque.h:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/exception_ptr.h:
 
@@ -2041,6 +2073,8 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: ../app/main.cc \
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/syslog.h:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/int_limits.h:
+
+/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/deque:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_map.h:
 
@@ -2154,6 +2188,8 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: ../app/main.cc \
 
 /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/core/cvi_tdl_types_mem.h:
 
+/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/queue:
+
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_uninitialized.h:
 
 /home/thuyen/middleware/v2/include/cvi_bin.h:
@@ -2184,6 +2220,8 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: ../app/main.cc \
 
 /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h:
 
+/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/mutex:
+
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/localefwd.h:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/char_traits.h:
@@ -2193,6 +2231,8 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: ../app/main.cc \
 /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/core/core/cvtdl_core_types.h:
 
 /home/thuyen/cvitek_tdl_sdk/include/cvi_tdl/cvi_comm.h:
+
+/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/condition_variable:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/sys/select.h:
 
@@ -2379,6 +2419,8 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: ../app/main.cc \
 /usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_list.h:
+
+/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ctime:
 
 /home/thuyen/cvitek_tdl_sdk/sample/3rd/rtsp/include/cvi_rtsp/rtsp.h:
 

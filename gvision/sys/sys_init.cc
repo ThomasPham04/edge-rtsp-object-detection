@@ -16,12 +16,12 @@ bool SystemInit::init(int srcWidth, int srcHeight) {
     uint32_t alignH = AlignUp(srcHeight, 2);
     // Pool 0: YUV420 frame buffers (decoder/output frames)
     stVbConf.astCommPool[0].u32BlkSize = alignW * alignH * 3 / 2;
-    stVbConf.astCommPool[0].u32BlkCnt = 6;
+    stVbConf.astCommPool[0].u32BlkCnt = 4;
 
     // Pool 1: Encoder stream buffers (bitstream). Size is conservative.
     // Adjust if needed based on actual bitrate/resolution.
     stVbConf.astCommPool[1].u32BlkSize = alignW * alignH;
-    stVbConf.astCommPool[1].u32BlkCnt = 4;
+    stVbConf.astCommPool[1].u32BlkCnt = 3;
 
     CVI_VB_SetConfig(&stVbConf);
     CVI_VB_Init();
