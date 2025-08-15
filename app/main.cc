@@ -186,7 +186,7 @@ int main(int argc, char* argv[]) {
             if (encoder.getStream(&stStream)) {
                 for (uint32_t i = 0; i < stStream.u32PackCount; i++) {
                     VENC_PACK_S *ppack = &stStream.pstPack[i];
-                    const uint8_t* sendPtr = ppack->pu8Addr + ppack->u32Offset;
+                    const uint8_t* sendPtr = ppack->pu8Addr; //+ ppack->u32Offset
                     uint32_t sendLen = ppack->u32Len - ppack->u32Offset;
                     uint64_t pts = ppack->u64PTS;
 

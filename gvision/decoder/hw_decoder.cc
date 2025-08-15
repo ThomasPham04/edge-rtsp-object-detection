@@ -5,7 +5,6 @@ HardwareDecoder::HardwareDecoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E dec
     attr.enMode = VIDEO_MODE_FRAME;
     attr.u32PicWidth = srcWidth;
     attr.u32PicHeight = srcHeight;
-    
     uint32_t alignW = (srcWidth + 15) & ~15;
     uint32_t alignH = (srcHeight + 1) & ~1;
     attr.u32StreamBufSize = alignW * alignH * 2; 
