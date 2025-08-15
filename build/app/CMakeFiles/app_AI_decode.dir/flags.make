@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/thuyen/ffmpeg_libs_n4.4.4.2/include -I/home/thuyen/middleware/v2/include -I/home/thuyen/middleware/v2/include/linux -I/home/thuyen/middleware/v2/component/panel -I/home/thuyen/middleware/v2/sample/common -I/home/thuyen/cvitek_tdl_sdk/include -I/home/thuyen/cvitek_tdl_sdk/include/cvi_tdl -I/home/thuyen/cvitek_tdl_sdk/include/cvi_tdl_app -I/home/thuyen/cvitek_tdl_sdk/sample/3rd/include -I/home/thuyen/cvitek_tdl_sdk/sample/utils -I/home/thuyen/cvitek_tdl_sdk/sample/3rd/opencv/include -I/home/thuyen/cvitek_tdl_sdk/sample/3rd/ive/include -I/home/thuyen/cvitek_tdl_sdk/sample/3rd/rtsp/include/cvi_rtsp -I/home/thuyen/cvitek_tdl_sdk/sample/3rd/stb/include -I/home/thuyen/cvitek_tdl_sdk/include/cvi_md -I/home/thuyen/cvitek_tdl_sdk/include/cvi_draw_rect -I/home/thuyen/cvitek_tdl_sdk/include/cvi_preprocess -I/home/thuyen/middleware/v2/include/isp/cv181x -I/home/thuyen/ByteTrack-cpp/include -I/home/thuyen/ByteTrack-cpp/include/ByteTrack -I/home/thuyen/libav-decoder -I/home/thuyen/libav-decoder/gvision -I/home/thuyen/libav-decoder/cvitek-tdl-sdk/include -I/usr/include/eigen3
 
-CXX_FLAGS = 
+CXX_FLAGS = -Wall -Wextra -Werror
 

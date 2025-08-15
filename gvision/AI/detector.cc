@@ -42,7 +42,6 @@ void AIDetection::setThresholds(CVI_TDL_SUPPORTED_MODEL_E model, float threshold
 
 bool AIDetection::ensureImageProcessor() {
     if (!imageProcessorCreated) {
-        // Ask the SDK to use smaller internal buffers when possible
         if (CVI_TDL_Create_ImageProcessor(&(this->img_handle)) == CVI_SUCCESS) {
             imageProcessorCreated = true;
         } else {
@@ -53,14 +52,7 @@ bool AIDetection::ensureImageProcessor() {
     return true;
 }
 
-void AIDetection::objDectection (   const std::string& url,
-                                    VIDEO_FRAME_INFO_S *frame,
-                                    CVI_TDL_SUPPORTED_MODEL_E model,
-                                    cvtdl_object_t *obj,
-                                    float threshold
-                                ){
-    // Model and thresholds should be configured once outside the loop
-    (void)url; // unused
+void AIDetection::objDectection (VIDEO_FRAME_INFO_S *frame, cvtdl_object_t *obj){
     if (!modelOpened) {
         std::cerr << "Model not opened. Call openModel() before detection.\n";
         return;

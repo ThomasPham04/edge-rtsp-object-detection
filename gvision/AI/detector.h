@@ -40,10 +40,5 @@ class AIDetection{
     void setThresholds(CVI_TDL_SUPPORTED_MODEL_E model_id, float threshold, float nms_threshold);
     bool ensureImageProcessor();
 
-    void objDectection ( const std::string& url,
-                        VIDEO_FRAME_INFO_S *frame,
-                        CVI_TDL_SUPPORTED_MODEL_E model_id,
-                        cvtdl_object_t *obj,
-                        float threshold
-                    );
+    void objDectection (VIDEO_FRAME_INFO_S *frame, cvtdl_object_t *obj);
 };

@@ -19,7 +19,8 @@ std::unordered_map<std::string, PAYLOAD_TYPE_E> decode_type = {
 std::atomic<bool> stop(false);  
 
 void int_handler(int signal){
-    stop = true;
+    if (signal == SIGINT)
+        stop = true;
 }
 int main(int argc, char* argv[]) {
     if (argc < 2) {
@@ -71,7 +72,8 @@ int main(int argc, char* argv[]) {
     AVPacket pkt;
     VIDEO_FRAME_INFO_S frame;
     VENC_STREAM_S stStream;
-    cvtdl_object_t obj = {0}; 
+    cvtdl_object_t obj;
+    memset(&obj, 0, sizeof(obj));
     
     while (reader.readPacket(pkt)) {
             // Reduce log noise to save CPU and avoid flooding
@@ -84,7 +86,7 @@ int main(int argc, char* argv[]) {
             continue;
         }
         if (decoder.getFrame(&frame)) {
-            detector.objDectection(argv[1], &frame, model, &obj, 0.5f);
+            detector.objDectection(&frame,&obj);
 
             // Hàm clamp giúp giới hạn giá trị nằm trong khoảng [low, high]
             auto clamp = [](float v, float low, float high) {
@@ -124,7 +126,8 @@ int main(int argc, char* argv[]) {
                         << ", width=" << rect.width()
                         << ", height=" << rect.height() << "\n";
 
-                cvtdl_object_t obj_meta = {0};
+                cvtdl_object_t obj_meta;
+                memset(&obj_meta, 0, sizeof(obj_meta));
                 cvtdl_service_brush_t brushi;
                 brushi.color.r = 255;
                 brushi.color.g = 255;

@@ -1,4 +1,3 @@
-// hw_decoder.cpp
 #include "hw_decoder.h"
 HardwareDecoder::HardwareDecoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E decodeType) {
     VDEC_CHN_ATTR_S attr = {};
@@ -6,16 +5,14 @@ HardwareDecoder::HardwareDecoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E dec
     attr.enMode = VIDEO_MODE_FRAME;
     attr.u32PicWidth = srcWidth;
     attr.u32PicHeight = srcHeight;
-    // Use aligned sizes and provide a larger bitstream buffer
+    
     uint32_t alignW = (srcWidth + 15) & ~15;
     uint32_t alignH = (srcHeight + 1) & ~1;
-    attr.u32StreamBufSize = alignW * alignH * 2; // conservative for high bitrate
-    // reduce frame buffer count to ease memory pressure
+    attr.u32StreamBufSize = alignW * alignH * 2; 
+    
     attr.u32FrameBufCnt = 3;
     attr.u32FrameBufSize = alignW * alignH * 3 / 2;
-    // Prefer low-latency single-core path if available
-    // attr.u32FrameBufSize = srcWidth * srcHeight;
-
+    
     CVI_S32 ret = CVI_VDEC_CreateChn(vdecChn, &attr);
     if (ret != CVI_SUCCESS) {
         std::cerr << "CVI_VDEC_CreateChn failed: " << ret << "\n";

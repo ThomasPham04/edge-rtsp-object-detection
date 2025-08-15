@@ -24,7 +24,7 @@ HardwareEncoder::HardwareEncoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E enc
     }
 
     chnAttr.stVencAttr.bByFrame        = CVI_TRUE;
-    chnAttr.stVencAttr.bSingleCore     = CVI_TRUE;
+    chnAttr.stVencAttr.bSingleCore     = CVI_FALSE;
     chnAttr.stVencAttr.bEsBufQueueEn   = CVI_FALSE;
     chnAttr.stVencAttr.bIsoSendFrmEn   = CVI_FALSE;
 
@@ -32,10 +32,11 @@ HardwareEncoder::HardwareEncoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E enc
 
     if (encodeType == PT_H264) {
         chnAttr.stRcAttr.enRcMode = VENC_RC_MODE_H264CBR;
-        chnAttr.stRcAttr.stH264Cbr.u32Gop = 10;
-        chnAttr.stRcAttr.stH264Cbr.u32BitRate = 1024; 
+        chnAttr.stRcAttr.stH264Cbr.u32Gop = 40;
+        chnAttr.stRcAttr.stH264Cbr.u32BitRate = 409600; 
         chnAttr.stRcAttr.stH264Cbr.u32SrcFrameRate = 20;
         chnAttr.stRcAttr.stH264Cbr.fr32DstFrameRate = 20;
+        chnAttr.stRcAttr.stH264Cbr.bVariFpsEn = 1;
     } else if (encodeType == PT_H265) {
         chnAttr.stRcAttr.enRcMode = VENC_RC_MODE_H265CBR;
         chnAttr.stRcAttr.stH265Cbr.u32Gop = 40;
@@ -43,12 +44,11 @@ HardwareEncoder::HardwareEncoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E enc
         chnAttr.stRcAttr.stH265Cbr.u32SrcFrameRate = 20;
         chnAttr.stRcAttr.stH265Cbr.fr32DstFrameRate = 20;
     } else {
-        
-        chnAttr.stRcAttr.enRcMode = VENC_RC_MODE_H264CBR;
-        chnAttr.stRcAttr.stH264Cbr.u32Gop = 40;
-        chnAttr.stRcAttr.stH264Cbr.u32BitRate = 4000000;
-        chnAttr.stRcAttr.stH264Cbr.u32SrcFrameRate = 20;
-        chnAttr.stRcAttr.stH264Cbr.fr32DstFrameRate = 20;
+        chnAttr.stRcAttr.enRcMode = VENC_RC_MODE_H264VBR;
+        chnAttr.stRcAttr.stH264Vbr.u32Gop = 40;
+        chnAttr.stRcAttr.stH264Vbr.u32BitRate = 4000000;
+        chnAttr.stRcAttr.stH264Vbr.u32SrcFrameRate = 20;
+        chnAttr.stRcAttr.stH264Vbr.fr32DstFrameRate = 20;
     }
 
     chnAttr.stGopAttr.enGopMode = VENC_GOPMODE_NORMALP;
