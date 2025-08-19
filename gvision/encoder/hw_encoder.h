@@ -43,7 +43,7 @@ private:
 
 public:
     rtspSession() = default;
-    // prevent accidental copying which may double-free RTSP session
+    
     rtspSession(const rtspSession&) = delete;
     rtspSession& operator=(const rtspSession&) = delete;
     rtspSession(rtspSession&&) = default;

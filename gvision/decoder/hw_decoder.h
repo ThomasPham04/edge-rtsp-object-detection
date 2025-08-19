@@ -18,7 +18,7 @@ public:
     ~HardwareDecoder(){
         CVI_VDEC_StopRecvStream(vdecChn);
         CVI_VDEC_DestroyChn(vdecChn);
-        // System/VB lifetime is managed by SystemInit
+       
     }
     HardwareDecoder(int width, int height, PAYLOAD_TYPE_E codecType);
     bool sendPacket(uint8_t *data, uint32_t size, int64_t pts);
@@ -26,6 +26,5 @@ public:
     void releaseFrame(VIDEO_FRAME_INFO_S *pFrame);
 private:
     VDEC_CHN vdecChn = 0;
-    // VB_CONFIG_S *pstVbConfig
-    // VB_POOL vbpool = VB_INVALID_POOLID;
+    
 };

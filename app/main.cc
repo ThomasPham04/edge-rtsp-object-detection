@@ -62,6 +62,12 @@ int main(int argc, char* argv[]) {
     HardwareEncoder encoder(srcWidth, srcHeight, type);
     AIDetection detector(srcWidth, srcHeight);
     CVI_TDL_SUPPORTED_MODEL_E model = CVI_TDL_SUPPORTED_MODEL_YOLOV8_DETECTION;
+    
+    cvitdl_handle_t tdl_handle = NULL;
+    
+    cvitdl_service_handle_t stServiceHandle = NULL;
+    CVI_TDL_Service_CreateHandle(&stServiceHandle, tdl_handle);
+    
     if (!detector.openModel(argv[1], model)) {
         std::cerr << "Failed to open model: " << argv[1] << "\n";
         reader.close();
@@ -76,146 +82,90 @@ int main(int argc, char* argv[]) {
     memset(&obj, 0, sizeof(obj));
     
     while (reader.readPacket(pkt)) {
-            // Reduce log noise to save CPU and avoid flooding
-            // std::cout   << "\nPacket size: " << pkt.size
-            //             << " PTS: " << pkt.pts
-            //             << " Stream index: " << pkt.stream_index << "\n";
-        if (!decoder.sendPacket(pkt.data, pkt.size, pkt.pts)){
-            std::cerr << "Failed to send packet to decoder\n";
-            av_packet_unref(&pkt);
-            continue;
+        if (!decoder.sendPacket(pkt.data, pkt.size, pkt.pts)) {
+        std::cerr << "Failed to send packet to decoder\n";
+        av_packet_unref(&pkt);
+        continue;
         }
-        if (decoder.getFrame(&frame)) {
-            detector.objDectection(&frame,&obj);
 
-            // Hàm clamp giúp giới hạn giá trị nằm trong khoảng [low, high]
-            auto clamp = [](float v, float low, float high) {
-                return std::max(low, std::min(v, high));
-            };
+        if (decoder.getFrame(&frame)) {
+            detector.objDectection(&frame, &obj);
+
+            
+            // auto clamp = [](float v, float low, float high) { return std::max(low, std::min(v, high)); };
 
             std::vector<byte_track::Object> detected_objects;
             for (uint32_t i = 0; i < obj.size; i++) {
-                if (obj.info[i].classes == 0) {  // Only person
+                if (obj.info[i].classes == 0) {  
+                    // float x1 = clamp(obj.info[i].bbox.x1, 0.f, (float)(srcWidth - 1));
+                    // float y1 = clamp(obj.info[i].bbox.y1, 0.f, (float)(srcHeight - 1));
+                    // float width = std::min(obj.info[i].bbox.x2 - obj.info[i].bbox.x1, (float)(srcWidth - x1));
+                    // float height = std::min(obj.info[i].bbox.y2 - obj.info[i].bbox.y1, (float)(srcHeight - y1));
                     float x1 = obj.info[i].bbox.x1;
                     float y1 = obj.info[i].bbox.y1;
-                    float x2 = obj.info[i].bbox.x2;
-                    float y2 = obj.info[i].bbox.y2;
-
-                    // Tính width, height đúng
-                    float width = x2 - x1;
-                    float height = y2 - y1;
-
-                    
-                    x1 = clamp(x1, 0.f, (float)(srcWidth - 1));
-                    y1 = clamp(y1, 0.f, (float)(srcHeight - 1));
-                    width = std::min(width, (float)(srcWidth - x1));
-                    height = std::min(height, (float)(srcHeight - y1));
-
-                    byte_track::Rect<float> rect(x1, y1, width, height);
-                    detected_objects.emplace_back(rect, 0, obj.info[i].bbox.score);
+                    float width = obj.info[i].bbox.x2 - x1;
+                    float height = obj.info[i].bbox.y2 - y1;
+                    detected_objects.emplace_back(byte_track::Rect<float>(x1, y1, width, height), 0, obj.info[i].bbox.score);
                 }
             }
 
+            
             auto tracks = tracker.update(detected_objects);
-            // std::cout << "Tracked People:\n";
-            for (const auto& track : tracks) {
-                const auto& rect = track->getRect();  
-                std::cout << "ID: " << track->getTrackId()
-                        << " Box: x=" << rect.x()
-                        << ", y=" << rect.y()
-                        << ", width=" << rect.width()
-                        << ", height=" << rect.height() << "\n";
 
+            if (!tracks.empty()) {
+                
                 cvtdl_object_t obj_meta;
                 memset(&obj_meta, 0, sizeof(obj_meta));
-                cvtdl_service_brush_t brushi;
-                brushi.color.r = 255;
-                brushi.color.g = 255;
-                brushi.color.b = 255;
-                brushi.size = 4;
+                obj_meta.size = tracks.size();
+                obj_meta.width = frame.stVFrame.u32Width;
+                obj_meta.height = frame.stVFrame.u32Height;
+                obj_meta.rescale_type = RESCALE_CENTER;
+                obj_meta.info = (cvtdl_object_info_t*)malloc(sizeof(cvtdl_object_info_t) * obj_meta.size);
 
-                obj_meta.size = 1;
-                obj_meta.rescale_type = meta_rescale_type_e::RESCALE_CENTER;
+                cvtdl_service_brush_t brush;
+                brush.color.r = 255;
+                brush.color.g = 255;
+                brush.color.b = 255;
+                brush.size = 4;
 
-                
-                obj_meta.info = (cvtdl_object_info_t *)malloc(sizeof(cvtdl_object_info_t) * obj_meta.size);
-                if (!obj_meta.info) {
-                    std::cerr << "Memory allocation failed for obj_meta.info\n";
-                    continue;  
+                for (size_t i = 0; i < tracks.size(); ++i) {
+                    const auto& rect = tracks[i]->getRect();
+                    obj_meta.info[i].bbox.x1 = rect.x();
+                    obj_meta.info[i].bbox.y1 = rect.y();
+                    obj_meta.info[i].bbox.x2 = rect.x() + rect.width();
+                    obj_meta.info[i].bbox.y2 = rect.y() + rect.height();
                 }
 
-                obj_meta.info[0].bbox.x1 = rect.x();
-                obj_meta.info[0].bbox.y1 = rect.y();
-                obj_meta.info[0].bbox.x2 = rect.x() + rect.width();
-                obj_meta.info[0].bbox.y2 = rect.y() + rect.height();
-
-                CVI_TDL_ObjectDrawRect(&obj_meta, &frame, false, brushi);
-
                 
+                CVI_TDL_Service_ObjectDrawRect(stServiceHandle, &obj_meta, &frame, false, brush);
+
                 free(obj_meta.info);
             }
 
-
             
-           if (encoder.isStarted() && encoder.sendFrame(&frame)) {
-
-            
-            VENC_CHN_STATUS_S stStat;
-            if (CVI_VENC_QueryStatus(encoder.getVencChn(), &stStat) != CVI_SUCCESS) {
-                std::cerr << "CVI_VENC_QueryStatus failed\n";
-                decoder.releaseFrame(&frame);
-                continue;
-            }
-
-            if (stStat.u32CurPacks == 0) {
-                std::cerr << "No encoded data available for this frame\n";
-                decoder.releaseFrame(&frame);
-                continue;
-            }
-
-            
-            memset(&stStream, 0, sizeof(stStream));
-            stStream.pstPack = (VENC_PACK_S*)malloc(sizeof(VENC_PACK_S) * stStat.u32CurPacks);
-            if (!stStream.pstPack) {
-                std::cerr << "malloc failed for pstPack\n";
-                decoder.releaseFrame(&frame);
-                continue;
-            }
-
-            
-            if (encoder.getStream(&stStream)) {
-                for (uint32_t i = 0; i < stStream.u32PackCount; i++) {
-                    VENC_PACK_S *ppack = &stStream.pstPack[i];
-                    const uint8_t* sendPtr = ppack->pu8Addr; //+ ppack->u32Offset
-                    uint32_t sendLen = ppack->u32Len - ppack->u32Offset;
-                    uint64_t pts = ppack->u64PTS;
-
-                    if (!session->writeFrame(sendPtr, sendLen, pts)) {
-                        std::cerr << "Failed to write frame to RTSP\n";
+            if (encoder.isStarted() && encoder.sendFrame(&frame)) {
+                VENC_CHN_STATUS_S stStat;
+                if (CVI_VENC_QueryStatus(encoder.getVencChn(), &stStat) == CVI_SUCCESS && stStat.u32CurPacks > 0) {
+                    stStream.pstPack = (VENC_PACK_S*)malloc(sizeof(VENC_PACK_S) * stStat.u32CurPacks);
+                    if (stStream.pstPack && encoder.getStream(&stStream)) {
+                        for (uint32_t i = 0; i < stStream.u32PackCount; i++) {
+                            session->writeFrame(stStream.pstPack[i].pu8Addr, stStream.pstPack[i].u32Len, stStream.pstPack[i].u64PTS);
+                        }
+                        encoder.releaseStream(&stStream);
                     }
+                    free(stStream.pstPack);
                 }
-                encoder.releaseStream(&stStream);
-            } else {
-                std::cerr << "No stream data available yet\n";
             }
-
-            free(stStream.pstPack);
-            stStream.pstPack = NULL;
-
-        } else if (!encoder.isStarted()) {
-            std::cerr << "Encoder not started; skipping frame\n";
-        } else {
-            std::cerr << "Encoder can't send frame\n";
-        }
 
             decoder.releaseFrame(&frame);
+            CVI_TDL_Free(&obj);
         }
 
-        CVI_TDL_Free(&obj);
         av_packet_unref(&pkt);
-
         if(stop) break;
     }
+
+    CVI_TDL_Service_DestroyHandle(stServiceHandle);
     reader.close();
     return 0;
 }

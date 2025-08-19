@@ -30,14 +30,30 @@ HardwareEncoder::HardwareEncoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E enc
 
     
 
+    // Optimized rate control settings for 2K resolution
     if (encodeType == PT_H264) {
-        chnAttr.stRcAttr.enRcMode = VENC_RC_MODE_H264CBR;
-        chnAttr.stRcAttr.stH264Cbr.u32Gop = 20;
-        chnAttr.stRcAttr.stH264Cbr.u32BitRate = 409600; 
-        chnAttr.stRcAttr.stH264Cbr.u32SrcFrameRate = 20;
-        chnAttr.stRcAttr.stH264Cbr.fr32DstFrameRate = 20;
-        chnAttr.stRcAttr.stH264Cbr.bVariFpsEn = 0;
-        chnAttr.stRcAttr.stH264Cbr.u32StatTime = 1;
+        // Use FIXQP mode for better quality with 2K resolution
+        chnAttr.stRcAttr.enRcMode = VENC_RC_MODE_H264FIXQP;
+        
+        // Optimized GOP size for 20fps (2 seconds)
+        chnAttr.stRcAttr.stH264FixQp.u32Gop = 40;
+        
+        // Optimized QP values for 2K resolution
+        // Lower QP = better quality, higher bitrate
+        if (srcWidth >= 2560 && srcHeight >= 1440) {
+            chnAttr.stRcAttr.stH264FixQp.u32IQp = 18;  // I-frame QP (good quality)
+            chnAttr.stRcAttr.stH264FixQp.u32PQp = 22;  // P-frame QP (good quality)
+        } else if (srcWidth >= 1920 && srcHeight >= 1080) {
+            chnAttr.stRcAttr.stH264FixQp.u32IQp = 20;  // I-frame QP
+            chnAttr.stRcAttr.stH264FixQp.u32PQp = 24;  // P-frame QP
+        } else {
+            chnAttr.stRcAttr.stH264FixQp.u32IQp = 22;  // I-frame QP
+            chnAttr.stRcAttr.stH264FixQp.u32PQp = 26;  // P-frame QP
+        }
+        
+        chnAttr.stRcAttr.stH264FixQp.u32SrcFrameRate = 20;
+        chnAttr.stRcAttr.stH264FixQp.fr32DstFrameRate = 20;
+        chnAttr.stRcAttr.stH264FixQp.bVariFpsEn = 0;
     } else if (encodeType == PT_H265) {
         chnAttr.stRcAttr.enRcMode = VENC_RC_MODE_H265CBR;
         chnAttr.stRcAttr.stH265Cbr.u32Gop = 40;
@@ -60,6 +76,13 @@ HardwareEncoder::HardwareEncoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E enc
         return;
     } else {
         std::cout << "HardwareEncoder create channel successfully\n";
+        std::cout << "Resolution: " << srcWidth << "x" << srcHeight << "\n";
+        if (encodeType == PT_H264) {
+            std::cout << "H.264 FIXQP Mode - I-QP: " << chnAttr.stRcAttr.stH264FixQp.u32IQp 
+                     << ", P-QP: " << chnAttr.stRcAttr.stH264FixQp.u32PQp << "\n";
+        } else if (encodeType == PT_H265) {
+            std::cout << "H.265 Bitrate: " << (chnAttr.stRcAttr.stH265Cbr.u32BitRate / 1000000) << " Mbps\n";
+        }
     }
 
     
