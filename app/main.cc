@@ -92,19 +92,19 @@ int main(int argc, char* argv[]) {
             detector.objDectection(&frame, &obj);
 
             
-            // auto clamp = [](float v, float low, float high) { return std::max(low, std::min(v, high)); };
+            auto clamp = [](float v, float low, float high) { return std::max(low, std::min(v, high)); };
 
             std::vector<byte_track::Object> detected_objects;
             for (uint32_t i = 0; i < obj.size; i++) {
                 if (obj.info[i].classes == 0) {  
-                    // float x1 = clamp(obj.info[i].bbox.x1, 0.f, (float)(srcWidth - 1));
-                    // float y1 = clamp(obj.info[i].bbox.y1, 0.f, (float)(srcHeight - 1));
-                    // float width = std::min(obj.info[i].bbox.x2 - obj.info[i].bbox.x1, (float)(srcWidth - x1));
-                    // float height = std::min(obj.info[i].bbox.y2 - obj.info[i].bbox.y1, (float)(srcHeight - y1));
-                    float x1 = obj.info[i].bbox.x1;
-                    float y1 = obj.info[i].bbox.y1;
-                    float width = obj.info[i].bbox.x2 - x1;
-                    float height = obj.info[i].bbox.y2 - y1;
+                    float x1 = clamp(obj.info[i].bbox.x1, 0.f, (float)(srcWidth - 1));
+                    float y1 = clamp(obj.info[i].bbox.y1, 0.f, (float)(srcHeight - 1));
+                    float width = std::min(obj.info[i].bbox.x2 - obj.info[i].bbox.x1, (float)(srcWidth - x1));
+                    float height = std::min(obj.info[i].bbox.y2 - obj.info[i].bbox.y1, (float)(srcHeight - y1));
+                    // float x1 = obj.info[i].bbox.x1;
+                    // float y1 = obj.info[i].bbox.y1;
+                    // float width = obj.info[i].bbox.x2 - x1;
+                    // float height = obj.info[i].bbox.y2 - y1;
                     detected_objects.emplace_back(byte_track::Rect<float>(x1, y1, width, height), 0, obj.info[i].bbox.score);
                 }
             }

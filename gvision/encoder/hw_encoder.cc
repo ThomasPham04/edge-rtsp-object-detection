@@ -32,27 +32,12 @@ HardwareEncoder::HardwareEncoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E enc
 
     // Optimized rate control settings for 2K resolution
     if (encodeType == PT_H264) {
-        // Use FIXQP mode for better quality with 2K resolution
-        chnAttr.stRcAttr.enRcMode = VENC_RC_MODE_H264FIXQP;
+        chnAttr.stRcAttr.enRcMode = VENC_RC_MODE_H264VBR;
+        chnAttr.stRcAttr.stH264Vbr.u32Gop = 40;
+        chnAttr.stRcAttr.stH264Vbr.u32MaxBitRate = 4000000;
+        chnAttr.stRcAttr.stH264Vbr.u32SrcFrameRate = 20;
+        chnAttr.stRcAttr.stH264Vbr.fr32DstFrameRate = 20;
         
-        // Optimized GOP size for 20fps (2 seconds)
-        chnAttr.stRcAttr.stH264FixQp.u32Gop = 40;
-        
-        // Optimized QP values for 2K resolution
-        // Lower QP = better quality, higher bitrate
-        if (srcWidth >= 2560 && srcHeight >= 1440) {
-            chnAttr.stRcAttr.stH264FixQp.u32IQp = 18;  // I-frame QP (good quality)
-            chnAttr.stRcAttr.stH264FixQp.u32PQp = 22;  // P-frame QP (good quality)
-        } else if (srcWidth >= 1920 && srcHeight >= 1080) {
-            chnAttr.stRcAttr.stH264FixQp.u32IQp = 20;  // I-frame QP
-            chnAttr.stRcAttr.stH264FixQp.u32PQp = 24;  // P-frame QP
-        } else {
-            chnAttr.stRcAttr.stH264FixQp.u32IQp = 22;  // I-frame QP
-            chnAttr.stRcAttr.stH264FixQp.u32PQp = 26;  // P-frame QP
-        }
-        
-        chnAttr.stRcAttr.stH264FixQp.u32SrcFrameRate = 20;
-        chnAttr.stRcAttr.stH264FixQp.fr32DstFrameRate = 20;
         chnAttr.stRcAttr.stH264FixQp.bVariFpsEn = 0;
     } else if (encodeType == PT_H265) {
         chnAttr.stRcAttr.enRcMode = VENC_RC_MODE_H265CBR;
