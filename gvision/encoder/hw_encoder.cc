@@ -10,7 +10,7 @@ HardwareEncoder::HardwareEncoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E enc
     chnAttr.stVencAttr.u32MaxPicWidth  = srcWidth;
     chnAttr.stVencAttr.u32MaxPicHeight = srcHeight;
     
-    chnAttr.stVencAttr.u32BufSize = ALIGN(srcWidth, 16) * ALIGN(srcHeight, 16) * 3 / 2;
+    chnAttr.stVencAttr.u32BufSize = ALIGN(srcWidth, 32) * ALIGN(srcHeight, 32) * 3 / 2;
     // chnAttr.stVencAttr.u32BufSize = srcWidth*srcHeight*1.5;
     
     if (encodeType == PT_H264) {
@@ -32,13 +32,13 @@ HardwareEncoder::HardwareEncoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E enc
 
     // Optimized rate control settings for 2K resolution
     if (encodeType == PT_H264) {
-        chnAttr.stRcAttr.enRcMode = VENC_RC_MODE_H264VBR;
-        chnAttr.stRcAttr.stH264Vbr.u32Gop = 40;
-        chnAttr.stRcAttr.stH264Vbr.u32MaxBitRate = 4000000;
-        chnAttr.stRcAttr.stH264Vbr.u32SrcFrameRate = 20;
-        chnAttr.stRcAttr.stH264Vbr.fr32DstFrameRate = 20;
-        
-        chnAttr.stRcAttr.stH264FixQp.bVariFpsEn = 0;
+        chnAttr.stRcAttr.enRcMode = VENC_RC_MODE_H264CBR;
+        chnAttr.stRcAttr.stH264Cbr.u32Gop = 20;
+        chnAttr.stRcAttr.stH264Cbr.u32BitRate = 409600; 
+        chnAttr.stRcAttr.stH264Cbr.u32SrcFrameRate = 20;
+        chnAttr.stRcAttr.stH264Cbr.fr32DstFrameRate = 40;
+        chnAttr.stRcAttr.stH264Cbr.bVariFpsEn = 0;
+        chnAttr.stRcAttr.stH264Cbr.u32StatTime = 1;
     } else if (encodeType == PT_H265) {
         chnAttr.stRcAttr.enRcMode = VENC_RC_MODE_H265CBR;
         chnAttr.stRcAttr.stH265Cbr.u32Gop = 40;
