@@ -13,9 +13,15 @@ bool SystemInit::init(int srcWidth, int srcHeight){
         return false;
     }
     VB_CONFIG_S stVbConf = {};
-    stVbConf.u32MaxPoolCnt = 1;
+    stVbConf.u32MaxPoolCnt = 3;
     stVbConf.astCommPool[0].u32BlkSize = srcWidth * srcHeight * 3 / 2;
-    stVbConf.astCommPool[0].u32BlkCnt = 4;
+    stVbConf.astCommPool[0].u32BlkCnt = 24;
+
+    stVbConf.astCommPool[1].u32BlkSize = srcWidth * srcHeight * 3 / 2;
+    stVbConf.astCommPool[1].u32BlkCnt = 24;
+
+    // stVbConf.astCommPool[2].u32BlkSize = srcWidth * srcHeight * 3 / 2;
+    // stVbConf.astCommPool[2].u32BlkCnt = 12;
     ret = CVI_VB_SetConfig(&stVbConf);
     if (ret != CVI_SUCCESS){
         std::cerr << "CVI_VB_Setconfig failed\n";

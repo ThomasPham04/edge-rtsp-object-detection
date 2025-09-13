@@ -1,5 +1,6 @@
 # 📦 RTSP Hardware Decoder + YOLOv8 Object Detection (CVITEK SDK)
-
+# Pham Dao Nhat Thuyen 
+# 13/9/2025 
 This project demonstrates how to:
 - Read and decode RTSP video streams using **CVITEK hardware decoder**
 - Manage **Video Buffer (VB)** and **SYS** system

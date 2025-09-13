@@ -76,10 +76,6 @@ int main(int argc, char* argv[]) {
     memset(&obj, 0, sizeof(obj));
     
     while (reader.readPacket(pkt)) {
-            // Reduce log noise to save CPU and avoid flooding
-            // std::cout   << "\nPacket size: " << pkt.size
-            //             << " PTS: " << pkt.pts
-            //             << " Stream index: " << pkt.stream_index << "\n";
         if (!decoder.sendPacket(pkt.data, pkt.size, pkt.pts)){
             std::cerr << "Failed to send packet to decoder\n";
             av_packet_unref(&pkt);
@@ -88,20 +84,20 @@ int main(int argc, char* argv[]) {
         if (decoder.getFrame(&frame)) {
             detector.objDectection(&frame,&obj);
 
-            // Hàm clamp giúp giới hạn giá trị nằm trong khoảng [low, high]
+            
             auto clamp = [](float v, float low, float high) {
                 return std::max(low, std::min(v, high));
             };
 
             std::vector<byte_track::Object> detected_objects;
             for (uint32_t i = 0; i < obj.size; i++) {
-                if (obj.info[i].classes == 0) {  // Only person
+                if (obj.info[i].classes == 0) {  
                     float x1 = obj.info[i].bbox.x1;
                     float y1 = obj.info[i].bbox.y1;
                     float x2 = obj.info[i].bbox.x2;
                     float y2 = obj.info[i].bbox.y2;
 
-                    // Tính width, height đúng
+                    
                     float width = x2 - x1;
                     float height = y2 - y1;
 
@@ -117,7 +113,7 @@ int main(int argc, char* argv[]) {
             }
 
             auto tracks = tracker.update(detected_objects);
-            // std::cout << "Tracked People:\n";
+            
             for (const auto& track : tracks) {
                 const auto& rect = track->getRect();  
                 std::cout << "ID: " << track->getTrackId()
@@ -186,7 +182,7 @@ int main(int argc, char* argv[]) {
             if (encoder.getStream(&stStream)) {
                 for (uint32_t i = 0; i < stStream.u32PackCount; i++) {
                     VENC_PACK_S *ppack = &stStream.pstPack[i];
-                    const uint8_t* sendPtr = ppack->pu8Addr; //+ ppack->u32Offset
+                    const uint8_t* sendPtr = ppack->pu8Addr; 
                     uint32_t sendLen = ppack->u32Len - ppack->u32Offset;
                     uint64_t pts = ppack->u64PTS;
 
