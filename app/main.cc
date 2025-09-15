@@ -62,12 +62,6 @@ int main(int argc, char* argv[]) {
     HardwareEncoder encoder(srcWidth, srcHeight, type);
     AIDetection detector(srcWidth, srcHeight);
     CVI_TDL_SUPPORTED_MODEL_E model = CVI_TDL_SUPPORTED_MODEL_YOLOV8_DETECTION;
-    
-    cvitdl_handle_t tdl_handle = NULL;
-    
-    cvitdl_service_handle_t stServiceHandle = NULL;
-    CVI_TDL_Service_CreateHandle(&stServiceHandle, tdl_handle);
-    
     if (!detector.openModel(argv[1], model)) {
         std::cerr << "Failed to open model: " << argv[1] << "\n";
         reader.close();
@@ -87,7 +81,6 @@ int main(int argc, char* argv[]) {
             av_packet_unref(&pkt);
             continue;
         }
-
         if (decoder.getFrame(&frame)) {
             detector.objDectection(&frame,&obj);
 
@@ -119,7 +112,6 @@ int main(int argc, char* argv[]) {
                 }
             }
 
-            
             auto tracks = tracker.update(detected_objects);
             
             for (const auto& track : tracks) {
@@ -132,31 +124,33 @@ int main(int argc, char* argv[]) {
 
                 cvtdl_object_t obj_meta;
                 memset(&obj_meta, 0, sizeof(obj_meta));
-                obj_meta.size = tracks.size();
-                obj_meta.width = frame.stVFrame.u32Width;
-                obj_meta.height = frame.stVFrame.u32Height;
-                obj_meta.rescale_type = RESCALE_CENTER;
-                obj_meta.info = (cvtdl_object_info_t*)malloc(sizeof(cvtdl_object_info_t) * obj_meta.size);
+                cvtdl_service_brush_t brushi;
+                brushi.color.r = 255;
+                brushi.color.g = 255;
+                brushi.color.b = 255;
+                brushi.size = 4;
 
-                cvtdl_service_brush_t brush;
-                brush.color.r = 255;
-                brush.color.g = 255;
-                brush.color.b = 255;
-                brush.size = 4;
-
-                for (size_t i = 0; i < tracks.size(); ++i) {
-                    const auto& rect = tracks[i]->getRect();
-                    obj_meta.info[i].bbox.x1 = rect.x();
-                    obj_meta.info[i].bbox.y1 = rect.y();
-                    obj_meta.info[i].bbox.x2 = rect.x() + rect.width();
-                    obj_meta.info[i].bbox.y2 = rect.y() + rect.height();
-                }
+                obj_meta.size = 1;
+                obj_meta.rescale_type = meta_rescale_type_e::RESCALE_CENTER;
 
                 
-                CVI_TDL_Service_ObjectDrawRect(stServiceHandle, &obj_meta, &frame, false, brush);
+                obj_meta.info = (cvtdl_object_info_t *)malloc(sizeof(cvtdl_object_info_t) * obj_meta.size);
+                if (!obj_meta.info) {
+                    std::cerr << "Memory allocation failed for obj_meta.info\n";
+                    continue;  
+                }
 
+                obj_meta.info[0].bbox.x1 = rect.x();
+                obj_meta.info[0].bbox.y1 = rect.y();
+                obj_meta.info[0].bbox.x2 = rect.x() + rect.width();
+                obj_meta.info[0].bbox.y2 = rect.y() + rect.height();
+
+                CVI_TDL_ObjectDrawRect(&obj_meta, &frame, false, brushi);
+
+                
                 free(obj_meta.info);
             }
+
 
             
            if (encoder.isStarted() && encoder.sendFrame(&frame)) {
@@ -211,14 +205,13 @@ int main(int argc, char* argv[]) {
         }
 
             decoder.releaseFrame(&frame);
-            CVI_TDL_Free(&obj);
         }
 
+        CVI_TDL_Free(&obj);
         av_packet_unref(&pkt);
+
         if(stop) break;
     }
-
-    CVI_TDL_Service_DestroyHandle(stServiceHandle);
     reader.close();
     return 0;
 }

@@ -1,7 +1,6 @@
 #include "hw_decoder.h"
 HardwareDecoder::HardwareDecoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E decodeType) {
     VDEC_CHN_ATTR_S attr = {};
-    memset(&attr, 0, sizeof(attr));
     attr.enType = decodeType;
     attr.enMode = VIDEO_MODE_FRAME;
     attr.u32PicWidth = srcWidth;
@@ -44,7 +43,7 @@ bool HardwareDecoder::sendPacket(uint8_t *data, uint32_t size, int64_t pts) {
 }
 
 bool HardwareDecoder::getFrame(VIDEO_FRAME_INFO_S *pFrame) {
-    int ret = CVI_VDEC_GetFrame(this->vdecChn, pFrame, -1);
+    int ret = CVI_VDEC_GetFrame(this->vdecChn, pFrame, 2000);
     if (ret != CVI_SUCCESS) {
         std::cerr << "CVI_VDEC_GetFrame failed with error: " << ret << "\n";
         return false;
