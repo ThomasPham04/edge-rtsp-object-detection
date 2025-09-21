@@ -42,19 +42,35 @@ bool RtspReader::open(const std::string& url) {
 }
 
 bool RtspReader::readPacket(AVPacket &pkt) {
-    int ret = av_read_frame(fmtCtx, &pkt);
-    if (ret < 0){
-        std::cout << "Error reading frame: " << ret << "\n";
-        return false;
+    int maxRetry = 5;  
+    int retry = 0;
+    int ret;
+
+    while (retry < maxRetry) {
+        ret = av_read_frame(fmtCtx, &pkt);
+        if (ret >= 0) {
+            if (pkt.stream_index == videoStreamIndex) {
+                std::cout << "\nGot video packet\n";
+                return true;
+            }
+            av_packet_unref(&pkt);
+            return false;
+        } else {
+            if (ret == AVERROR(EAGAIN) || ret == AVERROR_EOF) {
+                std::cerr << "Retrying...\n";
+                retry++;
+                av_usleep(1000 * 100); 
+                continue;
+            }
+            std::cerr << "Error reading frame: " << ret << "\n";
+            return false;
+        }
     }
-    
-    if (pkt.stream_index == videoStreamIndex){
-        std::cout << "\nGot video packet\n";
-        return true;
-    }
-    av_packet_unref(&pkt);
+
+    std::cerr << "Max retry exceeded, giving up\n";
     return false;
 }
+
 
 void RtspReader::close() {
     if (fmtCtx) avformat_close_input(&fmtCtx);

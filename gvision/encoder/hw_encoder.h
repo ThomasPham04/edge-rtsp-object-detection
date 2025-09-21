@@ -43,7 +43,6 @@ private:
 
 public:
     rtspSession() = default;
-    
     rtspSession(const rtspSession&) = delete;
     rtspSession& operator=(const rtspSession&) = delete;
     rtspSession(rtspSession&&) = default;
@@ -71,7 +70,7 @@ public:
 
     bool init(int port = 8554, int maxConn = 4);
     
-    rtspSession* createSession(const std::string& name, CVI_RTSP_VIDEO_CODEC codec = RTSP_VIDEO_H265);
+    rtspSession* createSession(const std::string& name, CVI_RTSP_VIDEO_CODEC codec = RTSP_VIDEO_H264);
 
     CVI_RTSP_CTX* getCtx() const { return rtspCtx; }
 };

@@ -2,6 +2,7 @@
 #pragma once
 extern "C" {
     #include <libavformat/avformat.h>
+    #include <libavutil/time.h>
 }
 #include <iostream>
 #include <string>

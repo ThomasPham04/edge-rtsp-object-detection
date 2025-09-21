@@ -73,6 +73,11 @@ int main(int argc, char* argv[]) {
     VIDEO_FRAME_INFO_S frame;
     VENC_STREAM_S stStream;
     cvtdl_object_t obj;
+    cvtdl_service_brush_t brushi;
+    brushi.color.r = 255;
+    brushi.color.g = 255;
+    brushi.color.b = 255;
+    brushi.size = 4;
     memset(&obj, 0, sizeof(obj));
     
     while (reader.readPacket(pkt)) {
@@ -124,11 +129,7 @@ int main(int argc, char* argv[]) {
 
                 cvtdl_object_t obj_meta;
                 memset(&obj_meta, 0, sizeof(obj_meta));
-                cvtdl_service_brush_t brushi;
-                brushi.color.r = 255;
-                brushi.color.g = 255;
-                brushi.color.b = 255;
-                brushi.size = 4;
+                
 
                 obj_meta.size = 1;
                 obj_meta.rescale_type = meta_rescale_type_e::RESCALE_CENTER;
@@ -183,7 +184,7 @@ int main(int argc, char* argv[]) {
                 for (uint32_t i = 0; i < stStream.u32PackCount; i++) {
                     VENC_PACK_S *ppack = &stStream.pstPack[i];
                     const uint8_t* sendPtr = ppack->pu8Addr; 
-                    uint32_t sendLen = ppack->u32Len - ppack->u32Offset;
+                    uint32_t sendLen = ppack->u32Len;
                     uint64_t pts = ppack->u64PTS;
 
                     if (!session->writeFrame(sendPtr, sendLen, pts)) {

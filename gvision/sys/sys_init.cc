@@ -18,7 +18,7 @@ bool SystemInit::init(int srcWidth, int srcHeight){
     stVbConf.astCommPool[0].u32BlkCnt = 24;
 
     // stVbConf.astCommPool[1].u32BlkSize = srcWidth * srcHeight * 3 / 2;
-    // stVbConf.astCommPool[1].u32BlkCnt = 8;
+    // stVbConf.astCommPool[1].u32BlkCnt = 24;
 
     // stVbConf.astCommPool[2].u32BlkSize = srcWidth * srcHeight * 3 / 2;
     // stVbConf.astCommPool[2].u32BlkCnt = 8;
