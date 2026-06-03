@@ -1,4 +1,0 @@
-cleả
-clear
-ls
-exit
