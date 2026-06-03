@@ -2,3 +2,4 @@ build/
 .vscode/
 .bash_history
 app/stream.h
+.env

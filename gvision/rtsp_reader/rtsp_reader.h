@@ -11,9 +11,11 @@ private:
     int width = 0;
     int height = 0;
     std::string codecType;
-    AVFormatContext *fmtCtx = avformat_alloc_context();
+    AVFormatContext *fmtCtx = nullptr;
     int videoStreamIndex = -1;
 public:
+    ~RtspReader();
+
     bool open(const std::string& url);
     bool readPacket(AVPacket &pkt);
     void close();

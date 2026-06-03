@@ -5,14 +5,14 @@
 #include "sys/sys_init.h"
 #include <csignal>
 #include <unistd.h>
+#include <cstdlib>
 #include <atomic>
 #include <vector>
 #include <unordered_map>
-#include "stream.h"
 #include "BYTETracker.h"
 #include "cvi_draw_rect.h"
 
-std::unordered_map<std::string, PAYLOAD_TYPE_E> decode_type = {
+const std::unordered_map<std::string, PAYLOAD_TYPE_E> decode_type = {
         {"H.264", PT_H264},
         {"H.265", PT_H265}
 };
@@ -24,7 +24,8 @@ void int_handler(int signal){
 }
 int main(int argc, char* argv[]) {
     if (argc < 2) {
-        std::cerr << "Usage: app_AI_decode <model_path> [rtsp_url]\n";
+        std::cerr << "Usage: app_AI_decode <model_path> [rtsp_url]\n"
+                  << "       or set RTSP_URL when rtsp_url is omitted\n";
         return -1;
     }
     
@@ -38,7 +39,13 @@ int main(int argc, char* argv[]) {
     RtspReader reader;
     signal(SIGINT, int_handler);
     std::cout << "-------------------Hardware Decoder-------------------\n";
-    std::string rtspUrl = (argc >= 3) ? std::string(argv[2]) : ip;
+    const char* envRtspUrl = std::getenv("RTSP_URL");
+    std::string rtspUrl = (argc >= 3) ? std::string(argv[2]) : (envRtspUrl ? std::string(envRtspUrl) : "");
+    if (rtspUrl.empty()) {
+        std::cerr << "Missing RTSP URL. Pass it as argv[2] or set RTSP_URL.\n";
+        return -1;
+    }
+
     if (!reader.open(rtspUrl.c_str())){
         std::cerr << "Failed to open\n";
         return -1;
@@ -51,15 +58,48 @@ int main(int argc, char* argv[]) {
     std::string codecType = reader.getCodecType();
     std::cout << "Video Width: " << srcWidth << ", Height: " << srcHeight << ", Type: " << codecType << "\n";
 
-    SystemInit::init(srcWidth,srcHeight);
+    auto decodeTypeIt = decode_type.find(codecType);
+    if (decodeTypeIt == decode_type.end()) {
+        std::cerr << "Unsupported codec: " << codecType << "\n";
+        reader.close();
+        return -1;
+    }
+    PAYLOAD_TYPE_E decodeType = decodeTypeIt->second;
+    PAYLOAD_TYPE_E encodeType = PT_H264;
+
+    if (!SystemInit::init(srcWidth,srcHeight)) {
+        std::cerr << "System initialization failed\n";
+        reader.close();
+        return -1;
+    }
+
     rtspServer ser;
-    ser.init(8854, 4);
+    if (!ser.init(8854, 4)) {
+        std::cerr << "RTSP server initialization failed\n";
+        reader.close();
+        return -1;
+    }
+
     rtspSession *session = ser.createSession("cam1", RTSP_VIDEO_H264);
+    if (!session) {
+        std::cerr << "Failed to create RTSP session\n";
+        reader.close();
+        return -1;
+    }
 
-    PAYLOAD_TYPE_E type = decode_type[codecType];
+    HardwareDecoder decoder(srcWidth, srcHeight, decodeType);
+    HardwareEncoder encoder(srcWidth, srcHeight, encodeType);
+    if (!decoder.isStarted()) {
+        std::cerr << "Decoder initialization failed\n";
+        reader.close();
+        return -1;
+    }
+    if (!encoder.isStarted()) {
+        std::cerr << "Encoder initialization failed\n";
+        reader.close();
+        return -1;
+    }
 
-    HardwareDecoder decoder(srcWidth, srcHeight, type);
-    HardwareEncoder encoder(srcWidth, srcHeight, type);
     AIDetection detector(srcWidth, srcHeight);
     CVI_TDL_SUPPORTED_MODEL_E model = CVI_TDL_SUPPORTED_MODEL_YOLOV8_DETECTION;
     if (!detector.openModel(argv[1], model)) {
@@ -68,7 +108,11 @@ int main(int argc, char* argv[]) {
         return -1;
     }
     detector.setThresholds(model, 0.5f, 0.5f);
-    detector.ensureImageProcessor();
+    if (!detector.ensureImageProcessor()) {
+        std::cerr << "Failed to initialize image processor\n";
+        reader.close();
+        return -1;
+    }
     AVPacket pkt;
     VIDEO_FRAME_INFO_S frame;
     VENC_STREAM_S stStream;

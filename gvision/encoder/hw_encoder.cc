@@ -61,6 +61,7 @@ HardwareEncoder::HardwareEncoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E enc
         std::cerr << "\nCVI_VENC_CreateChn failed: " << ret << "\n";
         return;
     } else {
+        this->created = true;
         std::cout << "HardwareEncoder create channel successfully\n";
         std::cout << "Resolution: " << srcWidth << "x" << srcHeight << "\n";
         if (encodeType == PT_H264) {
@@ -88,6 +89,11 @@ HardwareEncoder::HardwareEncoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E enc
 
 
 bool HardwareEncoder::sendFrame(const VIDEO_FRAME_INFO_S* frame){
+    if (!started) {
+        std::cerr << "Encoder not started\n";
+        return false;
+    }
+
     CVI_S32 ret = CVI_VENC_SendFrame(this->veChn, frame, -1);
     if (ret != CVI_SUCCESS) {
         std::cerr << "CVI_VENC_SendFrame failed with error: " << ret << "\n";
@@ -97,6 +103,11 @@ bool HardwareEncoder::sendFrame(const VIDEO_FRAME_INFO_S* frame){
 }
 
 bool HardwareEncoder::getStream(VENC_STREAM_S *stream){
+    if (!started) {
+        std::cerr << "Encoder not started\n";
+        return false;
+    }
+
     CVI_S32 ret = CVI_VENC_GetStream(this->veChn, stream, -1);
     if (ret != CVI_SUCCESS){
         std::cerr << "Failed to get stream";

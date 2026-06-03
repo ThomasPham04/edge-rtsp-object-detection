@@ -15,17 +15,26 @@ HardwareDecoder::HardwareDecoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E dec
     CVI_S32 ret = CVI_VDEC_CreateChn(vdecChn, &attr);
     if (ret != CVI_SUCCESS) {
         std::cerr << "CVI_VDEC_CreateChn failed: " << ret << "\n";
+        return;
     }
+    created = true;
 
     ret = CVI_VDEC_StartRecvStream(vdecChn);
     if (ret != CVI_SUCCESS) {
         std::cerr << "CVI_VDEC_StartRecvStream failed: " << ret << "\n";
+        return;
     }
+    started = true;
 
     std::cout << "Hardware decoder initialized successfully\n";
 }
 
 bool HardwareDecoder::sendPacket(uint8_t *data, uint32_t size, int64_t pts) {
+    if (!started) {
+        std::cerr << "Decoder not started\n";
+        return false;
+    }
+
     VDEC_STREAM_S stream;
     memset(&stream, 0, sizeof(stream));
     stream.pu8Addr = data;
@@ -43,6 +52,11 @@ bool HardwareDecoder::sendPacket(uint8_t *data, uint32_t size, int64_t pts) {
 }
 
 bool HardwareDecoder::getFrame(VIDEO_FRAME_INFO_S *pFrame) {
+    if (!started) {
+        std::cerr << "Decoder not started\n";
+        return false;
+    }
+
     int ret = CVI_VDEC_GetFrame(this->vdecChn, pFrame, 2000);
     if (ret != CVI_SUCCESS) {
         std::cerr << "CVI_VDEC_GetFrame failed with error: " << ret << "\n";
@@ -52,5 +66,8 @@ bool HardwareDecoder::getFrame(VIDEO_FRAME_INFO_S *pFrame) {
 }
 
 void HardwareDecoder::releaseFrame(VIDEO_FRAME_INFO_S *pFrame) {
+    if (!started) {
+        return;
+    }
     CVI_VDEC_ReleaseFrame(this->vdecChn, pFrame);
 }

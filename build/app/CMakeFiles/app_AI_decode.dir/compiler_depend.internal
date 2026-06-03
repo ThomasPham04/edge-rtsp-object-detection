@@ -1422,4 +1422,8 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o
  /home/thuyen/ByteTrack-cpp/include/ByteTrack/lapjv.h
  /home/thuyen/ByteTrack-cpp/include/ByteTrack/Object.h
  /home/thuyen/cvitek_tdl_sdk/include/cvi_draw_rect/cvi_draw_rect.h
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/chrono
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ratio
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ctime
+ /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/parse_numbers.h
 

@@ -1,9 +1,15 @@
 #!/bin/bash 
-export PATH=$HOME/host-tools/gcc/riscv64-linux-musl-x86_64/bin:$PATH
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SDK_BASE="$(cd "${REPO_ROOT}/.." && pwd)"
+TOOLCHAIN_DIR="${TOOLCHAIN_DIR:-${SDK_BASE}/host-tools/gcc/riscv64-linux-musl-x86_64}"
 
-export MW_PATH=/home/thuyen/middleware/v2
-export TPU_PATH=/home/thuyen/cvitek_tdl_sdk/sample/3rd/tpu
-export IVE_PATH=/home/thuyen/cvitek_tdl_sdk/sample/3rd/ive
-export USE_TPU_IVE=ON
-export CHIP=CV181X
-export SDK_VER=musl_riscv64
+export PATH="${TOOLCHAIN_DIR}/bin:$PATH"
+export MW_PATH="${MW_PATH:-${SDK_BASE}/middleware/v2}"
+export CVI_TDL_DIR="${CVI_TDL_DIR:-${SDK_BASE}/cvitek_tdl_sdk}"
+export FFMPEG_ROOT="${FFMPEG_ROOT:-${SDK_BASE}/ffmpeg_libs_n4.4.4.2}"
+export BYTETRACK_PATH="${BYTETRACK_PATH:-${SDK_BASE}/ByteTrack-cpp}"
+export TPU_PATH="${TPU_PATH:-${CVI_TDL_DIR}/sample/3rd/tpu}"
+export IVE_PATH="${IVE_PATH:-${CVI_TDL_DIR}/sample/3rd/ive}"
+export USE_TPU_IVE="${USE_TPU_IVE:-ON}"
+export CHIP="${CHIP:-CV181X}"
+export SDK_VER="${SDK_VER:-musl_riscv64}"

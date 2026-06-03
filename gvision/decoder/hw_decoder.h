@@ -16,15 +16,21 @@
 class HardwareDecoder {
 public:
     ~HardwareDecoder(){
-        CVI_VDEC_StopRecvStream(vdecChn);
-        CVI_VDEC_DestroyChn(vdecChn);
-       
+        if (started) {
+            CVI_VDEC_StopRecvStream(vdecChn);
+        }
+        if (created) {
+            CVI_VDEC_DestroyChn(vdecChn);
+        }
     }
     HardwareDecoder(int width, int height, PAYLOAD_TYPE_E codecType);
     bool sendPacket(uint8_t *data, uint32_t size, int64_t pts);
     bool getFrame(VIDEO_FRAME_INFO_S *pFrame);
     void releaseFrame(VIDEO_FRAME_INFO_S *pFrame);
+    bool isStarted() const { return started; }
 private:
     VDEC_CHN vdecChn = 0;
+    bool created = false;
+    bool started = false;
     
 };

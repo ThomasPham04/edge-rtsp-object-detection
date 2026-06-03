@@ -15,10 +15,10 @@
 
 class AIDetection{
     private:
-    int srcWidth;
-    int srcHeight;
-    cvitdl_handle_t handle;
-    imgprocess_t img_handle;
+    int srcWidth = 0;
+    int srcHeight = 0;
+    cvitdl_handle_t handle = nullptr;
+    imgprocess_t img_handle = nullptr;
     bool modelOpened = false;
     bool imageProcessorCreated = false;
     public:

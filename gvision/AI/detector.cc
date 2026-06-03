@@ -22,6 +22,11 @@ AIDetection::AIDetection (int srcWidth, int srcHeight){
 }
 
 bool AIDetection::openModel(const std::string& url, CVI_TDL_SUPPORTED_MODEL_E model){
+    if (!handle) {
+        std::cerr << "TDL handle is not initialized\n";
+        return false;
+    }
+
     CVI_S32 ret = CVI_TDL_OpenModel(this->handle, model, url.c_str());
     if (ret == CVI_TDL_ERR_INVALID_MODEL_PATH){
         std::cerr << "Incorrect model path\n";
@@ -29,6 +34,10 @@ bool AIDetection::openModel(const std::string& url, CVI_TDL_SUPPORTED_MODEL_E mo
     }
     if (ret == CVI_TDL_ERR_OPEN_MODEL){
         std::cerr << "Failed to start model\n";
+        return false;
+    }
+    if (ret != CVI_SUCCESS) {
+        std::cerr << "Failed to open model, error code: " << ret << "\n";
         return false;
     }
     modelOpened = true;

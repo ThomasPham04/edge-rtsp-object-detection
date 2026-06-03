@@ -20,12 +20,17 @@
 class HardwareEncoder {
 private:
     VENC_CHN veChn=0;
+    bool created = false;
     bool started = false;
 public:
     HardwareEncoder(int srcWidth, int srcHeight, PAYLOAD_TYPE_E encodeType);
     ~HardwareEncoder(){
-        CVI_VENC_StopRecvFrame(this->veChn);
-        CVI_VENC_DestroyChn(this->veChn);
+        if (started) {
+            CVI_VENC_StopRecvFrame(this->veChn);
+        }
+        if (created) {
+            CVI_VENC_DestroyChn(this->veChn);
+        }
     };
     bool sendFrame(const VIDEO_FRAME_INFO_S* frame);
     bool getStream(VENC_STREAM_S *stream);
@@ -74,4 +79,3 @@ public:
 
     CVI_RTSP_CTX* getCtx() const { return rtspCtx; }
 };
-

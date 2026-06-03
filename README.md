@@ -31,7 +31,18 @@ cmake --build . -j
 ./app_AI_decode <model_path> [rtsp_url]
 ```
 
-If `rtsp_url` is omitted, the default value in `app/stream.h` is used.
+Pass the RTSP input URL at runtime:
+
+```bash
+./app_AI_decode /path/to/model.cvimodel 'rtsp://user:pass@host/Streaming/channels/101'
+```
+
+Or set it through the environment:
+
+```bash
+export RTSP_URL='rtsp://user:pass@host/Streaming/channels/101'
+./app_AI_decode /path/to/model.cvimodel
+```
 
 ## Output Stream
 The application starts a local RTSP server and publishes a stream named `cam1` on port `8854`.

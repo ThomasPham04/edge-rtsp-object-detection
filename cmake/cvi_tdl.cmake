@@ -1,24 +1,40 @@
-set(CVI_TDL_DIR "/home/thuyen/cvitek_tdl_sdk")
+get_filename_component(REPO_ROOT "${CMAKE_CURRENT_LIST_DIR}/.." ABSOLUTE)
+get_filename_component(SDK_BASE "${REPO_ROOT}/.." ABSOLUTE)
 
 set(MW_PATH $ENV{MW_PATH})
 set(IVE_PATH $ENV{IVE_PATH})
 set(TPU_PATH $ENV{TPU_PATH})
+set(CVI_TDL_DIR $ENV{CVI_TDL_DIR})
 set(SDK_VER $ENV{SDK_VER})
 set(CHIP $ENV{CHIP})
 set(USE_TPU_IVE $ENV{USE_TPU_IVE})
 
-if (NOT DEFINED MW_PATH)
-    message(FATAL_ERROR "Please set middleware sdk root path to MW_PATH")
+if (NOT MW_PATH)
+    set(MW_PATH "${SDK_BASE}/middleware/v2")
 endif()
 
-if (DEFINED USE_TPU_IVE AND USE_TPU_IVE STREQUAL "ON")
-    if (NOT DEFINED IVE_PATH)
-        message(FATAL_ERROR "Please set ive sdk root path to IVE_PATH")
-    endif()
+if (NOT CVI_TDL_DIR)
+    set(CVI_TDL_DIR "${SDK_BASE}/cvitek_tdl_sdk")
 endif()
 
-if (NOT DEFINED TPU_PATH)
-    message(FATAL_ERROR "Please set tpu sdk root path to TPU_PATH")
+if (NOT IVE_PATH)
+    set(IVE_PATH "${CVI_TDL_DIR}/sample/3rd/ive")
+endif()
+
+if (NOT TPU_PATH)
+    set(TPU_PATH "${CVI_TDL_DIR}/sample/3rd/tpu")
+endif()
+
+if (NOT USE_TPU_IVE)
+    set(USE_TPU_IVE "ON")
+endif()
+
+if (NOT CHIP)
+    set(CHIP "CV181X")
+endif()
+
+if (NOT SDK_VER)
+    set(SDK_VER "musl_riscv64")
 endif()
 
 
@@ -54,7 +70,7 @@ set (MW_ALL_LIBS
 #############################################
 # TDL SDK
 #############################################
-set(SDK_ROOT_PATH "/home/thuyen/cvitek_tdl_sdk")
+set(SDK_ROOT_PATH "${CVI_TDL_DIR}")
 
 set(SDK_LIB_PATH "${SDK_ROOT_PATH}/lib")
 set(SDK_INC_PATH "${SDK_ROOT_PATH}/include")
@@ -199,7 +215,6 @@ message(STATUS "Path needed: ${MW_INC_PATH}")
 message(STATUS "=========>${CVI_TDL_INCLUDE_DIRS}")
 include_directories(
     ${CVI_TDL_INCLUDE_DIRS}
-    /home/thuyen/middleware/v2/include/linux
+    ${MW_INC_PATH}/linux
     )
 link_directories(${CVI_TDL_LIBRARY_DIRS})
-

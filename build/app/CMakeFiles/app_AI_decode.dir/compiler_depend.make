@@ -1415,8 +1415,14 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: ../app/main.cc \
   /home/thuyen/ByteTrack-cpp/include/ByteTrack/KalmanFilter.h \
   /home/thuyen/ByteTrack-cpp/include/ByteTrack/lapjv.h \
   /home/thuyen/ByteTrack-cpp/include/ByteTrack/Object.h \
-  /home/thuyen/cvitek_tdl_sdk/include/cvi_draw_rect/cvi_draw_rect.h
+  /home/thuyen/cvitek_tdl_sdk/include/cvi_draw_rect/cvi_draw_rect.h \
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/chrono \
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ratio \
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ctime \
+  /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/parse_numbers.h
 
+
+/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ratio:
 
 /home/thuyen/cvitek_tdl_sdk/include/cvi_draw_rect/cvi_draw_rect.h:
 
@@ -1529,6 +1535,8 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: ../app/main.cc \
 /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h:
 
 /usr/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h:
+
+/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/chrono:
 
 /usr/include/eigen3/Eigen/src/Core/Array.h:
 
@@ -1994,6 +2002,8 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: ../app/main.cc \
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/alloca.h:
 
+/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/parse_numbers.h:
+
 /usr/include/eigen3/Eigen/src/Core/Ref.h:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/cctype:
@@ -2383,6 +2393,8 @@ app/CMakeFiles/app_AI_decode.dir/main.cc.o: ../app/main.cc \
 /usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h:
 
 /home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_list.h:
+
+/home/thuyen/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ctime:
 
 /home/thuyen/cvitek_tdl_sdk/sample/3rd/rtsp/include/cvi_rtsp/rtsp.h:
 
